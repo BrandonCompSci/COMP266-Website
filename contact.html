@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Contact page for a computer science undergraduate">
+        <meta name="keywords" content="HTML, web-developer, student">
+        <meta name="author" content="Brandon Gautier">
+        <!-- The following line of code was taken from "https://www.w3schools.com/tags/tag_meta.asp"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Sourced from https://developers.google.com/fonts/docs/getting_started -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" title="Brandon's Homepage">Home</a> |
+                <a href="./about.html" title="About me">About</a> |
+                <a href="./skills.html" title="My skills">Skills</a> |
+                <a href="./projects.html" title="My projects">Projects</a> |
+                <a href="./contact.html" title="Contact form">Contact Me</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Contact <span class="secondary-font-color">Me</span></h1>
+
+            <p>
+                If you have any questions about me or this website, please feel free to use the form below to send me a message!
+            </p>
+
+            <form action="mailto:bgautier1@learn.athabascau.ca?subject=Landing Page Comment" method="post" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <label for="name">Name:
+                        <input type="text" name="name" id="user_name">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="email">Email:
+                        <input type="email" name="email" id="user_email">
+                    </label>
+                </div>
+
+                <div>
+                    <label for="messsage">Message:</label>
+                    <textarea id="message" name="user_message"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Clear Message">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>
+                Last modification: <span class="date"><time datetime="2023-02-09">February 9, 2023</time></span> by Brandon Gautier
+            </p>
+        </footer>
+    </body>
+</html>

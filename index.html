@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Landing page for a computer science undergraduate">
+        <meta name="keywords" content="HTML, web-developer, student">
+        <meta name="author" content="Brandon Gautier">
+        <!-- The following line of code was taken from "https://www.w3schools.com/tags/tag_meta.asp"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brandon Gautier | Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Sourced from https://developers.google.com/fonts/docs/getting_started -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900">
+    </head>
+    
+    <body>
+        <header id="header">
+            <h1>
+                <span class="secondary-font-color">Brandon&nbsp;</span>Gautier
+            </h1>
+            
+            <nav>
+                <a href="#index" title="Brandon's Homepage">Home</a> 
+                <a href="#about" title="About me">About</a> 
+                <a href="#skills" title="My skills">Skills</a> 
+                <a href="./projects.html" title="My projects">Projects</a> 
+                <a href="./contact.html" title="Contact form">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Start of Index Section -->
+            <section id="index">
+                <div class="block-theme segment">
+                    <div class="segment-text">
+                        <h2>
+                            Site&nbsp;<span class="secondary-font-color">Introduction</span>
+                        </h2>
+
+                        <p>
+                            Welcome to my website! I am currently in the process of building my platform to bring you the <em>best</em>
+                            possible browsing experience. My goal is to showcase my skills as a web-developer in a user-friendly 
+                            and accessable way. Whether you are a friend, peer, or potential employer, I hope you can use this
+                            website to learn a little bit more about me. Thank you for visiting and please check back soon for updates.
+                            I look forward to sharing my projects and experiences with you.
+                        </p>
+
+                        <p>
+                            <i>Please Note</i>: This is currently the CSS and HTML-only version of my landing page for COMP 266. I am excited to see how this
+                            page evolves over time as I learn more about JavaScript in the upcoming weeks.
+                        </p>
+                    </div>
+                    <div class="student-img segment-image">
+                        <!--Image sourced from: https://undraw.co/illustrations -->
+                        <img src="./images/student.svg" alt="Student sitting at a desk">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Start of About Section -->
+            <section id="about">
+                <div class="segment">
+                    <div class="segment-text">
+                        <h2>
+                            About&nbsp;<span class="secondary-font-color">Me</span>
+                        </h2>
+
+                        <p>
+                            Hello, world! My name is Brandon Gautier. I am currently pursuing a Bachelor's Degree in Computuing Science and 
+                            Information Technology at <a href="https://www.athabascau.ca/" title="Athabasca University Homepage">Athabasca University</a>. 
+                            In addition to Computing Science, I am also highly interested in the field of Psychology. In fact, I have a Bachelor's Degree (BSc) in Psychology from the
+                            <a href="https://www.ualberta.ca/" title="University of Alberta Homepage">University of Alberta</a>. My senior 
+                            undergraduate project involved the use of animal models to study various neuroprotective methods against stroke. 
+                            I also possess a Master's Degree (MSc) in Neuropsychology from the <a href="https://www.ed.ac.uk/" title="University of Edinburgh Homepage">University of Edinburgh</a>. 
+                            My Master's dissertation focused on the impact of planning on multitasking abilities in young and old adults. Outside 
+                            of academics, I enjoy practicing the guitar, working out, and playing computer games.
+                        </p>
+
+                        <div class="progress-segment">
+                            <h3>
+                                <span class="secondary-font-color">Degree&nbsp;&nbsp;</span>Progress
+                            </h3>
+
+                            <p>
+                                The following table will be used to document my current degree progress. I plan to update it whenever new grades become available.
+                            </p>
+
+                            <table>
+                                <tr>
+                                    <th>Course Code</th>
+                                    <th>Course Name</th>
+                                    <th>Course Grade</th>
+                                </tr>
+                                <tr>
+                                    <td>COMP 200</td>
+                                    <td>Intro. to Computing and Information Systems</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td>COMP 266</td>
+                                    <td>Intro. to Web Programming</td>
+                                    <td>In Progress</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- TO DO LIST -->
+                        <h3>
+                            To-Do&nbsp;&nbsp;<span class="secondary-font-color">List</span>
+                        </h3>
+
+                        <p>As this website is still incomplete, I have compiled the following list of objectives that I intend to meet.</p>
+                        
+                        <ul>
+                            <li class="completed">HTML Site Building</li>
+                            <li>CSS Site Styling</li>
+                            <li>Script Use and Augmentation</li>
+                            <li>Writing JavaScript</li>
+                            <li>Using Libraries</li>
+                            <li>Using External Data Sources</li>
+                        </ul>
+                        <!-- END OF TO DO LIST -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Start of Skills Section -->
+            <section id="skills">
+                <div class="block-theme segment">
+                    <div class="segment-text">
+                        <h2>
+                            My&nbsp;<span class="secondary-font-color">Skills</span>
+                        </h2>
+
+                        <p>
+                            I am constantly striving to expand my current skillset. I believe that a broad and well-rounded knowledge base is 
+                            the key to becoming a successful web-developer. Some of my skills applicable to computer science are listed below.
+                        </p>
+
+                        <div class="list-container">
+                            <div class="list-content">
+                                <div class="segment-image">
+                                    <!--Image sourced from: https://fontawesome.com/icons/laptop-code?s=solid&f=classic -->
+                                    <img src="./images/laptop.svg" alt="Programming languages">
+                                </div>
+                                
+                                <h3>Languages</h3>
+            
+                                <ul class="list-text">
+                                    <li>Python</li>
+                                    <li>R</li>
+                                    <li>SQL</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                            </div>
+                            <div class="list-content">
+                                <div class="segment-image">
+                                <!--Image sourced from: https://fontawesome.com/icons/microchip?s=solid&f=classic -->
+                                <img src="./images/microchip.svg" alt="Microchip">
+                                </div>
+                                <h3>Technologies</h3>
+                                
+                                <ul class="list-text">
+                                    <li>Visual Studio</li>
+                                    <li>Access</li>
+                                    <li>Excel</li>
+                                    <li>Photoshop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                Last modification: <span class="date"><time datetime="2023-02-08">February 8, 2023</time></span> by Brandon Gautier
+            </p>
+        </footer>
+    </body>
+</html>

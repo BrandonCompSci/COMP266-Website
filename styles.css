@@ -1,0 +1,207 @@
+:root {
+    /* These are the official University of Athabasca brand colors */
+    --color-theme-1: rgba(41, 41, 53, 1);
+    --color-theme-2: rgba(27, 54, 93, 1);
+    --font-theme-1: rgba(208, 209, 211, 1);
+    --font-theme-2: rgba(241, 90, 34, 1);
+    --link-color: rgba(253, 185, 36, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--font-theme-1);
+    background-color: var(--color-theme-1);
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 0px 0px 50px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+h1, h2, h3{
+    white-space: nowrap;
+}
+
+h1 {
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+.completed {
+    text-decoration-line: line-through;
+}
+
+.secondary-font-color {
+    color: var(--font-theme-2);
+}
+
+.block-theme {
+    background-color: var(--color-theme-2);
+}
+
+.segment {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.segment-text {
+    max-width: 50%;
+    align-content: center;
+    flex-direction: column;
+    margin: 0px 75px;
+    padding: 0px 0px 0px 75px;
+}
+
+.student-img {
+    height: 300px;
+    width: 300px;
+    margin: 0px 75px 0px 0px;
+    padding: 0px 75px 0px 0px;
+}
+
+.segment-image, .list-content h3{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid;
+    border-color: var(--link-color);
+}
+
+th, td {
+    text-align: left;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.progress-segment p, .progress-segment table {
+    width: 70%;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-content {
+    background-color: rgba(41, 41, 53, 0.5);
+    padding: 0px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 210px;
+}
+
+.list-content:hover {
+    background-color: rgba(187,187,190,0.2);
+}
+
+.list-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Responsive layout*/
+@media screen and (max-width: 1380px) {
+    .segment {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .segment-text{
+        max-width: 100%;
+        padding: 0px;
+        margin: 0px 40px;
+    }
+
+    .student-img {
+        margin: 0px 75px;
+        padding: 0px;
+    }
+
+    header {
+        padding: 0px 50px;
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 0px;
+    }
+
+    nav a{
+        padding: 0px 30px 25px 30px;
+    }
+
+    .list-container {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+    }
+
+    body {
+        min-width: 400px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .list-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
