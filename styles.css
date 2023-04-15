@@ -151,6 +151,19 @@ li {
     margin-bottom: 5px;
 }
 
+.project-border {
+    border-bottom: 2px solid var(--link-color);
+    padding-bottom: 30px;
+}
+
+.project-box {
+    padding-bottom: 0px;
+}
+
+.project-items {
+    padding-top: 0px;
+}
+
 /* Responsive layout*/
 @media screen and (max-width: 1380px) {
     .segment {
