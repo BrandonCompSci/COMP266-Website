@@ -151,11 +151,6 @@ li {
     margin-bottom: 5px;
 }
 
-.project-border {
-    border-bottom: 2px solid var(--link-color);
-    padding-bottom: 30px;
-}
-
 .project-box, .project-items{
     padding-bottom: 0px;
 }
@@ -177,11 +172,17 @@ li {
     margin-top: 0px;
 }
 
+#project-text {
+    padding-bottom: 10px;
+}
+
 .project-div {
     display: flex;
     flex-direction: row;
     width: 80%;
     align-self: center;
+    border-top: 2px solid var(--link-color);
+    padding-bottom: 30px;
 }
 
 #projects {
