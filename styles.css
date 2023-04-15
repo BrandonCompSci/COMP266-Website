@@ -191,6 +191,10 @@ li {
     align-items: center;
 }
 
+.project-div p {
+    margin-bottom: 0px;
+}
+
 /* Responsive layout*/
 @media screen and (max-width: 1380px) {
     .segment {
