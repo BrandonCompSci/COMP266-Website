@@ -160,7 +160,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .project-title {
@@ -201,6 +201,10 @@ li {
     max-height: 70px;
 }
 
+.thumbnail-border {
+    border: 5px solid var(--font-theme-1);
+}
+
 .made-with-container {
     display: flex;
     flex-direction: column;
@@ -213,6 +217,7 @@ li {
     width: 100%;
     justify-content: space-around;
 }
+
 
 /* Responsive layout*/
 @media screen and (max-width: 1380px) {
