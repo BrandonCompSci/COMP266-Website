@@ -226,6 +226,11 @@ li {
     margin: 0px 75px;
 }
 
+form {
+    padding: 1em;
+    border: 1px solid var(--link-color);
+    border-radius: 1em;
+}
 
 /* Responsive layout*/
 @media screen and (max-width: 1380px) {
