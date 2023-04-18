@@ -218,6 +218,14 @@ li {
     justify-content: space-around;
 }
 
+.form-container {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 75px;
+}
+
 
 /* Responsive layout*/
 @media screen and (max-width: 1380px) {
