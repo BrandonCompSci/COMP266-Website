@@ -41,6 +41,13 @@ h1 {
 
 h2 {
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .completed {
@@ -73,10 +80,6 @@ th, td {
     text-align: left;
     height: 30px;
     padding: 5px 10px;
-}
-
-.progress-segment p, .progress-segment table {
-    width: 70%;
 }
 
 .list-content {
@@ -240,12 +243,6 @@ nav a{
     display: flex;
     justify-content: space-evenly;
 }
-
-h2 {
-    display: flex;
-    justify-content: center;
-}
-
 
 /* Responsive layout*/
 @media screen and (max-width: 1279px) {
