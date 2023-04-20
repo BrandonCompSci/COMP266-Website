@@ -101,16 +101,11 @@ li {
     margin-bottom: 5px;
 }
 
-.project-box, .project-items{
-    padding-bottom: 0px;
-}
-
 .project-items {
     padding-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px;
 }
 
 .project-title {
@@ -127,10 +122,6 @@ li {
 }
 
 .project-div {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-self: center;
     border-top: 2px solid var(--link-color);
     padding-bottom: 25px;
 }
@@ -140,10 +131,6 @@ li {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-}
-
-.project-div p {
-    margin-bottom: 0px;
 }
 
 .project-icon {
@@ -164,8 +151,7 @@ li {
 
 .icon-container {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .form-container {
