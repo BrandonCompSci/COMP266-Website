@@ -45,7 +45,7 @@ h2 {
     justify-content: center;
 }
 
-h3 {
+h3, .table-container, .segment-image, .list-content h3 {
     display: flex;
     justify-content: center;
 }
@@ -60,11 +60,6 @@ h3 {
 
 .block-theme {
     background-color: var(--color-theme-2);
-}
-
-.segment-image, .list-content h3{
-    display: flex;
-    justify-content: center;
 }
 
 table {
