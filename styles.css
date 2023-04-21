@@ -9,9 +9,11 @@
 }
 
 html {
+    /* Add smooth scrolling */
     scroll-behavior: smooth;
 }
 
+/* Style body element */
 body {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: var(--font-theme-1);
@@ -23,14 +25,17 @@ header {
     padding: 0px 350px;
 }
 
+/* Make secondary font color orange */
 .secondary-font-color {
     color: var(--font-theme-2);
 }
 
+/* Make every second segment dark blue */
 .block-theme {
     background-color: var(--color-theme-2);
 }
 
+/* Style nav bar with flexbox*/
 nav {
     margin: 0px;
     display: flex;
@@ -38,6 +43,7 @@ nav {
     justify-content: space-evenly;
 }
 
+/* Style nav links */
 nav a{
     padding: 0px 30px 25px 30px;
     font-size: 20px;
@@ -45,12 +51,13 @@ nav a{
     font-weight: 600;
 }
 
+/* Make all links appear yellow */
 a {
     color: var(--link-color);
     text-decoration: none;
 }
 
-/* Underline links when mouse hovers over them */
+/* Underline links upon mouse hover */
 a:hover {
     text-decoration: underline;
 }
@@ -75,42 +82,41 @@ h3,
     justify-content: center;
 }
 
+/* Segments are the main content container in each section */
 .segment {
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* Style text contained within segment */
 .segment-text{
     max-width: 50%;
     padding: 0px;
     margin: 0px 40px;
 }
 
-.student-img {
-    margin: 0px 75px;
-    padding: 0px;
-}
-
+/* Specify dimensions of student-pic */
 #student-pic {
     height: 300px;
     width: 300px;
 }
 
+/* Add line-through for completed list items */
 .completed {
     text-decoration-line: line-through;
-}
-
-table {
-    border-collapse: collapse;
 }
 
 table,
 td,
 th {
-    border: 1px solid;
-    border-color: var(--link-color);
+    /* Make table borders solid yellow */
+    border: 1px solid var(--link-color);
+
+    /* Make table borders single line */
+    border-collapse: collapse;
 }
 
+/* Style table headers and data cells */
 th,
 td {
     text-align: left;
@@ -118,6 +124,7 @@ td {
     padding: 5px 10px;
 }
 
+/* Style content contained in lists */
 .list-content {
     background-color: rgba(41, 41, 53, 0.5);
     padding: 0px 20px;
@@ -144,6 +151,7 @@ form {
     align-items: center;
 }
 
+/* Style text contained in lists */
 .list-text {
     padding: 0px;
     list-style-type: none;
@@ -153,11 +161,7 @@ li {
     margin-bottom: 5px;
 }
 
-.project-items {
-    padding-top: 0px;
-}
-
-#project-text {
+#my-projects-text {
     padding-bottom: 10px;
 }
 
@@ -167,15 +171,18 @@ li {
     padding-bottom: 25px;
 }
 
+/* Make every project icon uniform size */
 .project-icon {
     max-width: 70px;
     max-height: 70px;
 }
 
+/* Add solid gray border to project thumbnails */
 .thumbnail-border {
     border: 5px solid var(--font-theme-1);
 }
 
+/* Style list and icon containers with flexbox */
 .list-container,
 .icon-container {
     display: flex;
@@ -190,8 +197,10 @@ li {
     margin: 0px 75px;
 }
 
+/* Style form */
 form {
     padding: 1em;
+    /* Create yellow border around form */
     border: 1px solid var(--link-color);
     border-radius: 1em;
     box-sizing: border-box;
@@ -203,11 +212,13 @@ form {
     width: 90%;
 }
 
+/* Style form fields with flexbox  */
 .name-container {
     display: flex;
     flex-direction: column;
 }
 
+/* Allow user to vertically resize 'Message' field */
 textarea {
     resize: vertical;
 }
@@ -216,6 +227,7 @@ label {
     margin: 10px 0px;
 }
 
+/* Style all input and textarea for contact form */
 input,
 textarea {
     padding: 0.55rem;
@@ -226,12 +238,14 @@ textarea {
     background-color: rgb(221, 221, 255);
 }
 
+/* Style 'Submit' button */
 .submit-container input {
     margin-top: 15px;
     width: 100%;
     font-variant: small-caps;
 }
 
+/* Change color of 'Submit' button upon mouse hover */
 .submit-container input:hover {
     cursor: pointer;
     background-color: var(--link-color);
