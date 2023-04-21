@@ -1,3 +1,4 @@
+/* Used for declaring global CSS variables */
 :root {
     /* These are the official University of Athabasca brand colors */
     --color-theme-1: rgba(41, 41, 53, 1);
@@ -18,41 +19,8 @@ body {
     margin: 0px;
 }
 
-a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-h1, h2, h3{
-    white-space: nowrap;
-}
-
-h1 {
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 40px;
-    font-variant: small-caps;
-}
-
-h2 {
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: center;
-}
-
-h3, .table-container, .segment-image, .list-content h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.completed {
-    text-decoration-line: line-through;
+header {
+    padding: 0px 350px;
 }
 
 .secondary-font-color {
@@ -63,126 +31,51 @@ h3, .table-container, .segment-image, .list-content h3 {
     background-color: var(--color-theme-2);
 }
 
-table {
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid;
-    border-color: var(--link-color);
-}
-
-th, td {
-    text-align: left;
-    height: 30px;
-    padding: 5px 10px;
-}
-
-.list-content {
-    background-color: rgba(41, 41, 53, 0.5);
-    padding: 0px 20px;
-    margin: 10px;
-    border-radius: 10px;
-    min-width: 210px;
-}
-
-.list-content:hover {
-    background-color: rgba(187,187,190,0.2);
-}
-
-.list-text {
+nav {
+    margin: 0px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 0px;
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-.project-items {
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-title {
-    display: flex;
-    justify-content: left;
-}
-
-#projects p {
-    margin-top: 0px;
-}
-
-#project-text {
-    padding-bottom: 10px;
-}
-
-.project-div {
-    border-top: 2px solid var(--link-color);
-    padding-bottom: 25px;
-}
-
-#projects {
-    display:flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-}
-
-.project-icon {
-    max-width: 70px;
-    max-height: 70px;
-}
-
-.thumbnail-border {
-    border: 5px solid var(--font-theme-1);
-}
-
-.made-with-container {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 100%;
-}
-
-.list-container, .icon-container {
-    display: flex;
     justify-content: space-evenly;
 }
 
-.form-container {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0px 75px;
+nav a{
+    padding: 0px 30px 25px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-form {
-    padding: 1em;
-    border: 1px solid var(--link-color);
-    border-radius: 1em;
-    box-sizing: border-box;
-    min-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-.field-container {
-    width: 90%;
+/* Underline links when mouse hovers over them */
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+/* Add flexbox to center items horizontally */
+h1,
+h2,
+h3,
+.table-container,
+.segment-image {
+    display: flex;
+    justify-content: center;
 }
 
 .segment {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -203,28 +96,111 @@ form {
     width: 300px;
 }
 
-header {
+.completed {
+    text-decoration-line: line-through;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    border-color: var(--link-color);
+}
+
+th,
+td {
+    text-align: left;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.list-content {
+    background-color: rgba(41, 41, 53, 0.5);
+    padding: 0px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 210px;
+}
+
+/* Make list container lighter color when hovered over */
+.list-content:hover {
+    background-color: rgba(187,187,190,0.2);
+}
+
+/* Add flexbox to center items vertically */
+header,
+.segment,
+.list-text,
+.project-items,
+.made-with-container,
+.form-container,
+form {
     display: flex;
-    padding: 0px 350px;
     flex-direction: column;
-}
-
-nav {
-    margin: 0px;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-nav a{
-    padding: 0px 30px 25px 30px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 600;
+.list-text {
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.project-items {
+    padding-top: 0px;
+}
+
+#project-text {
+    padding-bottom: 10px;
+}
+
+.project-div {
+    /* Add yellow division line between projects */
+    border-top: 2px solid var(--link-color);
+    padding-bottom: 25px;
+}
+
+.project-icon {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.thumbnail-border {
+    border: 5px solid var(--font-theme-1);
+}
+
+.list-container,
+.icon-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .list-container {
     margin-bottom: 10px;
+}
+
+.form-container {
+    margin: 0px 75px;
+}
+
+form {
+    padding: 1em;
+    border: 1px solid var(--link-color);
+    border-radius: 1em;
+    box-sizing: border-box;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+.field-container {
+    width: 90%;
 }
 
 .name-container {
@@ -240,7 +216,8 @@ label {
     margin: 10px 0px;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.55rem;
     font-weight: bold;
     font-size: 1.2rem;
@@ -260,17 +237,16 @@ input, textarea {
     background-color: var(--link-color);
   }
 
-/* Responsive layout*/
+/* Responsive layout - 
+Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {
-    .project-div {
-        flex-direction: column;
-    }
-
     .segment-text {
         max-width: 80%;
     }
 }
 
+/* Responsive layout - 
+Changes attributes if window is less than 800 px*/
 @media screen and (max-width: 800px) {
     header {
         padding: 0px 50px;
@@ -291,10 +267,5 @@ input, textarea {
     .list-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    h2 {
-        display: flex;
-        justify-content: center;
     }
 }
