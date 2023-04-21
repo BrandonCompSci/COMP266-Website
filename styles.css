@@ -37,6 +37,7 @@ h1 {
     justify-content: center;
     flex-direction: row;
     font-size: 40px;
+    font-variant: small-caps;
 }
 
 h2 {
@@ -244,12 +245,20 @@ input, textarea {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10px;
+    border-radius: 0.25rem;
+    background-color: rgb(221, 221, 255);
 }
 
 .submit-container input {
     margin-top: 15px;
     width: 100%;
+    font-variant: small-caps;
 }
+
+.submit-container input:hover {
+    cursor: pointer;
+    background-color: var(--link-color);
+  }
 
 /* Responsive layout*/
 @media screen and (max-width: 1279px) {
