@@ -8,12 +8,14 @@
     --link-color: rgba(253, 185, 36, 1);
 }
 
+/* Make changes that affect entire html document */
 html {
-    /* Add smooth scrolling */
-    scroll-behavior: smooth;
     word-spacing: 2px;
     line-height: 1.5rem;
     text-align: justify;
+
+    /* Add smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 /* Style body element */
