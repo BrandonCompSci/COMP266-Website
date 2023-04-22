@@ -11,6 +11,9 @@
 html {
     /* Add smooth scrolling */
     scroll-behavior: smooth;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 /* Style body element */
@@ -262,6 +265,10 @@ Changes attributes if window is less than 1279 px*/
 /* Responsive layout - 
 Changes attributes if window is less than 800 px*/
 @media screen and (max-width: 800px) {
+    html {
+        text-align: start;
+    }
+
     header {
         padding: 0px 50px;
     }
