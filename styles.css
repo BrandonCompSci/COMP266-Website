@@ -254,7 +254,15 @@ textarea {
 .submit-container input:hover {
     cursor: pointer;
     background-color: var(--link-color);
-  }
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+#copyright {
+    text-align: center;
+}
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
