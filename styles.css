@@ -40,6 +40,12 @@ header {
     background-color: var(--color-theme-2);
 }
 
+/* Make all links appear yellow */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
 /* Style nav bar with flexbox*/
 nav {
     margin: 0px;
@@ -52,14 +58,7 @@ nav {
 nav a{
     padding: 0px 30px 25px 30px;
     font-size: 20px;
-    text-decoration: none;
     font-weight: 600;
-}
-
-/* Make all links appear yellow */
-a {
-    color: var(--link-color);
-    text-decoration: none;
 }
 
 /* Underline links upon mouse hover */
