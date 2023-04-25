@@ -8,6 +8,13 @@
     --link-color: rgba(253, 185, 36, 1);
 }
 
+/* Add class to toggle dark mode */
+.dark-mode {
+    background-color: black;
+    --color-theme-2: white;
+    color: white;
+  }
+
 /* Make changes that affect entire html document */
 html {
     word-spacing: 2px;
@@ -52,6 +59,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#toggle-button {
+    display: flex;
+    align-self: flex-start;
 }
 
 /* Style nav links */
@@ -284,6 +296,10 @@ Changes attributes if window is less than 800 px*/
 
     nav {
         flex-direction: column;
+    }
+
+    #toggle-button {
+        align-self: center;
     }
 
     body {
