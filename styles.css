@@ -32,9 +32,6 @@ body {
     color: var(--font-theme-1);
     background-color: var(--color-theme-1);
     margin: 0px;
-
-    /* When toggling between light/dark mode, add transistion time */
-    transition: background-color 0.2s, color 0.2s;
 }
 
 header {

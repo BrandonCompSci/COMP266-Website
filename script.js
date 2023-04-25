@@ -9,10 +9,11 @@ function darkModeToggle() {
     // Declare contant variable 'toggleIcon' and select image element with ID 'toggle-icon'
     const toggleIcon = document.getElementById('toggle-icon');
     
-    // When button is clicked, toggle 'light-mode' settings on/off depending on whether class is present
+    // When button is clicked, toggle 'light-mode' settings on/off
     body.classList.toggle("light-mode");
 
-    // If 'light-mode' class is present, display image of moon. If not, display image of sun
+    // If 'light-mode' class is present on body element, display image of moon; 
+    // if not present, display image of sun
     if (body.classList.contains('light-mode')) {
         toggleIcon.src = './images/moon.png';
     } else {
