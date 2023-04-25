@@ -4,5 +4,5 @@
 // <https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp> [Accessed 24 April 2023].
 function darkModeToggle() {
     const toggleButton = document.body;
-    toggleButton.classList.toggle("dark-mode");
+    toggleButton.classList.toggle("light-mode");
   }

@@ -8,11 +8,11 @@
     --link-color: rgba(253, 185, 36, 1);
 }
 
-/* Add class to toggle dark mode */
-.dark-mode {
-    background-color:  #E6F0E6;
+/* Add class to toggle to light mode */
+.light-mode {
+    --color-theme-1: #E6F0E6;
     --color-theme-2: #F2F8FE;
-    color: var(--color-theme-1);
+    --font-theme-1:: rgba(41, 41, 53, 1);
     --link-color: #0086ce;
   }
 
@@ -60,15 +60,27 @@ a {
 /* Style nav bar with flexbox*/
 nav {
     margin: 0px;
+    height: 59px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-/* Style toggle button */
-#toggle-button {
+/* Use flexbox to align button container*/
+#toggle-button-container {
     display: flex;
     align-self: flex-start;
+}
+
+/* Style button */
+#toggle-button {
+    background-color: var(--color-theme-1);
+    border: none;
+}
+
+/* Show pointer upon mouse hover */
+button:hover {
+    cursor: pointer;
 }
 
 /* Style nav links */
@@ -303,9 +315,10 @@ Changes attributes if window is less than 800 px*/
 
     nav {
         flex-direction: column;
+        height: fit-content;
     }
 
-    #toggle-button {
+    #toggle-button-container {
         align-self: center;
     }
 
