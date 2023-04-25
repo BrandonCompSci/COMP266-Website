@@ -8,7 +8,7 @@
     --link-color: rgba(253, 185, 36, 1);
 }
 
-/* Add class to toggle to light mode */
+/* Add class for light mode colors */
 .light-mode {
     --color-theme-1: #E6F0E6;
     --color-theme-2: #F2F8FE;
@@ -212,7 +212,7 @@ li {
 
 /* Add solid gray border to project thumbnails */
 .thumbnail-border {
-    border: 5px solid var(--font-theme-1);
+    border: 5px solid rgba(208, 209, 211, 1);
 }
 
 /* Style list and icon containers with flexbox */
@@ -283,7 +283,7 @@ textarea {
 /* Change color of 'Submit' button upon mouse hover */
 .submit-container input:hover {
     cursor: pointer;
-    background-color: var(--link-color);
+    background-color: rgba(253, 185, 36, 1);
 }
 
 footer {
