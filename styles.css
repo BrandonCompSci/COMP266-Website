@@ -10,9 +10,10 @@
 
 /* Add class to toggle dark mode */
 .dark-mode {
-    background-color: black;
-    --color-theme-2: white;
-    color: white;
+    background-color:  #E6F0E6;
+    --color-theme-2: #F2F8FE;
+    color: var(--color-theme-1);
+    --link-color: #0086ce;
   }
 
 /* Make changes that affect entire html document */
@@ -31,6 +32,9 @@ body {
     color: var(--font-theme-1);
     background-color: var(--color-theme-1);
     margin: 0px;
+
+    /* When toggling between light/dark mode, add transistion time */
+    transition: background-color 0.2s, color 0.2s;
 }
 
 header {
@@ -61,6 +65,7 @@ nav {
     justify-content: space-evenly;
 }
 
+/* Style toggle button */
 #toggle-button {
     display: flex;
     align-self: flex-start;
@@ -142,11 +147,11 @@ td {
 
 /* Style content contained in lists */
 .list-content {
-    background-color: rgba(41, 41, 53, 0.5);
     padding: 0px 20px;
     margin: 10px;
     border-radius: 10px;
     min-width: 210px;
+    border: 1px solid var(--link-color);
 }
 
 /* Make list container lighter color when hovered over */
@@ -216,12 +221,13 @@ li {
 /* Style form */
 form {
     padding: 1em;
-    /* Create yellow border around form */
-    border: 1px solid var(--link-color);
     border-radius: 1em;
     box-sizing: border-box;
     min-width: 350px;
     margin-bottom: 20px;
+
+    /* Create yellow border around form */
+    border: 1px solid var(--link-color);
 }
 
 .field-container {
@@ -237,6 +243,7 @@ form {
 /* Allow user to vertically resize 'Message' field */
 textarea {
     resize: vertical;
+    border: 2px solid black;
 }
 
 label {
