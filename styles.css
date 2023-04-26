@@ -6,6 +6,7 @@
     --font-theme-1: rgba(208, 209, 211, 1);
     --font-theme-2: rgba(241, 90, 34, 1);
     --link-color: rgba(253, 185, 36, 1);
+    --button-background: rgba(52, 104, 177, 0.5);
 }
 
 /* Add class for light mode colors */
@@ -14,6 +15,7 @@
     --color-theme-2: #F2F8FE;
     --font-theme-1:: rgba(41, 41, 53, 1);
     --link-color: #0086ce;
+    --button-background: rgba(0, 220, 0, 0.5);
   }
 
 /* Make changes that affect entire html document */
@@ -304,7 +306,7 @@ footer {
     z-index: 99; /* Make sure it does not overlap */
     border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgba(52, 104, 177, 0.5); /* Set a background color */
+    background-color: var(--button-background); /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
