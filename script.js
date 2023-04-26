@@ -9,7 +9,7 @@ function darkModeToggle() {
 
     // Declare constant variable 'toggleIcon' and select image element with ID 'toggle-icon'
     const toggleIcon = document.getElementById('toggle-icon');
-    
+
     // When button is clicked, toggle 'light-mode' settings on/off
     body.classList.toggle("light-mode");
 
