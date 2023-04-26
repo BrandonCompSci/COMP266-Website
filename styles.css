@@ -291,6 +291,34 @@ footer {
     text-align: center;
 }
 
+.up-arrow {
+    height: 25px;
+    width: 25px;
+} 
+
+#go-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1vw; /* Place the button at the bottom of the page */
+    right: 1vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 2px solid black; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(52, 104, 177, 0.5); /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#go-top:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {
