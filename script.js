@@ -49,7 +49,6 @@ function topFunction() {
 
 /**
  * Implement Adaptive Top Navigation Menu
- * 
  */
 
 // Add event listener to hamburger icon
@@ -59,5 +58,14 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 function adaptiveNav() {
+    const navBar = document.getElementById("top-navbar");
+    const toggleButton = document.getElementById("toggle-button");
     
+    if (navBar.className === "navbar") {
+        navBar.className += " adaptive";
+        toggleButton.className += " adaptive";
+    } else {
+        navBar.className = "navbar";
+        toggleButton.className = "theme-toggle";
+    }
 }

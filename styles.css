@@ -385,4 +385,8 @@ Changes attributes if window is less than 800 px*/
         font-size: 1.5rem;
         padding-bottom: 1rem;
     }
+
+    .fa-bars:hover {
+        cursor: pointer;
+    }
 }
