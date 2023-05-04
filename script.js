@@ -51,6 +51,13 @@ function topFunction() {
  * Implement Adaptive Top Navigation Menu
  * 
  */
+
+// Add event listener to hamburger icon
+const hamburgerMenu = document.querySelector(".fa-bars");
+hamburgerMenu.addEventListener('click', () => {
+    adaptiveNav();
+});
+
 function adaptiveNav() {
     
 }

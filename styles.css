@@ -322,8 +322,7 @@ background-color: #555; /* Add a dark-grey background on hover */
 }
 
 .fa-bars {
-    display: none;
-    font-size: 1.5rem;
+    font-size: 0%;
 }
 
 /* Responsive layout - 
@@ -345,10 +344,10 @@ Changes attributes if window is less than 800 px*/
         padding: 0px 50px;
     }
 
-    /* nav {
+    nav {
         flex-direction: column;
         height: fit-content;
-    } */
+    }
 
     #toggle-button-container {
         align-self: center;
@@ -372,7 +371,18 @@ Changes attributes if window is less than 800 px*/
         display: none;
     }
 
+    .navbar.adaptive a,
+    .theme-toggle.adaptive {
+        display: block;
+    }
+
+    .theme-toggle {
+        padding-bottom: 1rem;
+    }
+
     .fa-bars {
         display: block;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
     }
 }
