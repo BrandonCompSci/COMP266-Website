@@ -321,6 +321,11 @@ footer {
 background-color: #555; /* Add a dark-grey background on hover */
 }
 
+.fa-bars {
+    display: none;
+    font-size: 1.5rem;
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {
@@ -340,10 +345,10 @@ Changes attributes if window is less than 800 px*/
         padding: 0px 50px;
     }
 
-    nav {
+    /* nav {
         flex-direction: column;
         height: fit-content;
-    }
+    } */
 
     #toggle-button-container {
         align-self: center;
@@ -360,5 +365,14 @@ Changes attributes if window is less than 800 px*/
     .list-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar a,
+    .theme-toggle {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
     }
 }
