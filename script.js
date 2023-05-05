@@ -1,24 +1,63 @@
+// This function handles all event listeners on the webpage
+function main() {
+
+}
+
+// Event listener for toggle theme button
+const toggleButton = document.getElementById("toggle-button");
+toggleButton.addEventListener("click", () => {
+    darkModeToggle();
+});
+
+// Event listener for back-to-top button
+const backToTop = document.getElementById("go-top");
+backToTop.addEventListener("click", () => {
+    topFunction();
+});
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+// Event listener for hamburger icon
+const hamburgerMenu = document.querySelector(".fa-bars");
+hamburgerMenu.addEventListener("click", () => {
+    adaptiveNav();
+});
+
+// Get input field elements
+const firstName = document.getElementById("user_first_name");
+firstName.addEventListener("blur", validateForm);
+
+const lastName = document.getElementById("user_last_name");
+const email = document.getElementById("user_email");
+
+// Define regular expressions for validation
+const nameRegex = /^[A-Za-z'-]+$/; // Only letters, apostrophes, and dashes
+
+// Get form element
+const form = document.getElementById("contact-form");
+
+
 // Implement Dark Mode / Light Mode toggle with JavaScript
 // Code sourced from: 
 // w3schools.com. 2023. How To Toggle Between Dark and Light Mode. [online] Available at: 
 // <https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp> [Accessed 24 April 2023].
-
 function darkModeToggle() {
     // Declare constant variable 'body' and set it to 'body' element of document
     const body = document.body;
 
     // Declare constant variable 'toggleIcon' and select image element with ID 'toggle-icon'
-    const toggleIcon = document.getElementById('toggle-icon');
+    const toggleIcon = document.getElementById("toggle-icon");
 
     // When button is clicked, toggle 'light-mode' settings on/off
     body.classList.toggle("light-mode");
 
     // If 'light-mode' class is present on body element, display image of moon; 
     // if not present, display image of sun
-    if (body.classList.contains('light-mode')) {
-        toggleIcon.src = './images/moon.png';
+    if (body.classList.contains("light-mode")) {
+        toggleIcon.src = "./images/moon.png";
     } else {
-        toggleIcon.src = './images/sun.png';
+        toggleIcon.src = "./images/sun.png";
     }
 }
 
@@ -26,10 +65,6 @@ function darkModeToggle() {
 // Code sourced from: 
 // w3schools.com. 2023. How To Create a Scroll To Top Button. [online] Available at: 
 // <https://www.w3schools.com/howto/howto_js_scroll_to_top.asp> [Accessed 25 April 2023].
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     // Get the button:
     let mybutton = document.getElementById("go-top");
@@ -50,13 +85,6 @@ function topFunction() {
 /**
  * Implement Adaptive Top Navigation Menu
  */
-
-// Add event listener to hamburger icon
-const hamburgerMenu = document.querySelector(".fa-bars");
-hamburgerMenu.addEventListener("click", () => {
-    adaptiveNav();
-});
-
 function adaptiveNav() {
     const navBar = document.getElementById("top-navbar");
     const toggleButton = document.getElementById("toggle-button");
@@ -73,18 +101,6 @@ function adaptiveNav() {
 /**
  * Implement Form Validation
  */
-// Get input field elements
-const firstName = document.getElementById("user_first_name");
-const lastName = document.getElementById("user_last_name");
-const email = document.getElementById("user_email");
-
-// Define regular expressions for validation
-const nameRegex = /^[A-Za-z'-]+$/; // Only letters, apostrophes, and dashes
-const emailRegex = /^\S+@\S+\.\S+$/; // Email format
-
-// Get form element
-const form = document.getElementById("contact-form");
-
 // Function to validate input fields
 function validateForm(submitForm) {
     // Validate form fields
@@ -136,6 +152,7 @@ function validateLastName() {
 function validateEmail() {
     let emailValid = false;
     const emailError = document.getElementById("email-error");
+    const emailRegex = /^\S+@\S+\.\S+$/; // Email format
 
     if (email.value === "") {
         return 
@@ -156,10 +173,5 @@ form.addEventListener("submit", validateForm);
 firstName.addEventListener("blur", validateForm);
 lastName.addEventListener("blur", validateForm);
 email.addEventListener("blur", validateForm);
-
-
-function main() {
-
-}
 
 main();
