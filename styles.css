@@ -325,6 +325,12 @@ background-color: #555; /* Add a dark-grey background on hover */
     font-size: 0%;
 }
 
+.form-error {
+    font-size: 0.8rem;
+    color: red;
+    font-weight: bold;
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {

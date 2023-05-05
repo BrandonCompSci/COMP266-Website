@@ -53,7 +53,7 @@ function topFunction() {
 
 // Add event listener to hamburger icon
 const hamburgerMenu = document.querySelector(".fa-bars");
-hamburgerMenu.addEventListener('click', () => {
+hamburgerMenu.addEventListener("click", () => {
     adaptiveNav();
 });
 
@@ -69,3 +69,97 @@ function adaptiveNav() {
         toggleButton.className = "theme-toggle";
     }
 }
+
+/**
+ * Implement Form Validation
+ */
+// Get input field elements
+const firstName = document.getElementById("user_first_name");
+const lastName = document.getElementById("user_last_name");
+const email = document.getElementById("user_email");
+
+// Define regular expressions for validation
+const nameRegex = /^[A-Za-z'-]+$/; // Only letters, apostrophes, and dashes
+const emailRegex = /^\S+@\S+\.\S+$/; // Email format
+
+// Get form element
+const form = document.getElementById("contact-form");
+
+// Function to validate input fields
+function validateForm(submitForm) {
+    // Validate form fields
+    let firstNameValid = validateFirstName();
+    let lastNameValid = validateLastName();
+    let emailValid = validateEmail();
+  
+    // Prevent form from submitting if any fields are invalid
+    if (!firstNameValid || !lastNameValid || !emailValid) {
+        submitForm.preventDefault();
+    }
+}
+  
+// Validate first name
+function validateFirstName() {
+    let firstNameValid = false;
+    const firstNameError = document.getElementById("first-name-error");
+
+    if (firstName.value === "") {
+        return 
+    } else if (nameRegex.test(firstName.value)) {
+        firstNameError.textContent = "";
+        firstNameValid = true;
+    } else {
+        firstNameError.textContent = "Invalid first name";
+    }
+
+    return firstNameValid;
+}
+
+// Validate last name
+function validateLastName() {
+    let lastNameValid = false;
+    const lastNameError = document.getElementById("last-name-error");
+
+    if (lastName.value === "") {
+        return 
+    } else if (nameRegex.test(lastName.value)) {
+        lastNameError.textContent = "";
+        lastNameValid = true;
+    } else {
+        lastNameError.textContent = "Invalid last name";
+    }
+
+    return lastNameValid;
+}
+
+// Validate email
+function validateEmail() {
+    let emailValid = false;
+    const emailError = document.getElementById("email-error");
+
+    if (email.value === "") {
+        return 
+    } else if (emailRegex.test(email.value)) {
+        emailError.textContent = "";
+        emailValid = true;
+    } else {
+        emailError.textContent = "Invalid email";
+    }
+
+    return emailValid;
+}
+
+// Add event listener to form submit event
+form.addEventListener("submit", validateForm);
+  
+// Add event listeners to input fields for real-time validation
+firstName.addEventListener("blur", validateForm);
+lastName.addEventListener("blur", validateForm);
+email.addEventListener("blur", validateForm);
+
+
+function main() {
+
+}
+
+main();

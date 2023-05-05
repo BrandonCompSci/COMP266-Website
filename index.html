@@ -299,17 +299,24 @@
                         </h2>
 
                         <!-- Start of form -->
-                        <form action="mailto:bgautier1@learn.athabascau.ca?subject=Landing Page Comment" method="post" enctype="application/x-www-form-urlencoded">
+                        <form action="mailto:bgautier1@learn.athabascau.ca?subject=Landing Page Comment" 
+                            method="post" 
+                            enctype="application/x-www-form-urlencoded"
+                            id="contact-form">
+                            
                             <div class="field-container">
                                 <div class="name-container">
                                     <label for="first-name">First Name</label>
                                     <input type="text" name="first-name" id="user_first_name">
+                                    <span class="form-error" id="first-name-error"></span>
                                     
                                     <label for="last-name">Last Name</label>
                                     <input type="text" name="last-name" id="user_last_name">
+                                    <span class="form-error" id="last-name-error"></span>
                                 
                                     <label for="email">Email</label>
                                     <input type="email" name="email" id="user_email">
+                                    <span class="form-error" id="email-error"></span>
 
                                     <label for="messsage">Message</label>
                                     
