@@ -5,52 +5,67 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-  }
+}
   
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .cell {
-    width: 115px;
-    height: 115px;
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    margin: 5px;
-    cursor: pointer;
-	-webkit-text-stroke: 2px black;
-	font-weight: 900;
-  }
-  
-  .cell.winner {
-    background-color: gold;
-  }
-  
-  #reset-button {
-    display: block;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  #result {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  #scoreboard {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-  }
+.row {
+display: flex;
+justify-content: center;
+}
+
+.cell {
+width: 115px;
+height: 115px;
+font-size: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+margin: 5px;
+cursor: pointer;
+-webkit-text-stroke: 2px black;
+font-weight: 900;
+background-color: rgb(77, 77, 99);
+color: rgb(221, 221, 221);
+}
+
+.cell:hover {
+	background-color: rgb(92, 92, 118);
+}
+
+.cell.winner {
+background-color: rgb(209, 178, 0);
+}
+
+#reset-button {
+display: block;
+margin-top: 20px;
+font-size: 20px;
+padding: 10px 20px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+#reset-button:hover {
+	background-color: #57d05b;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+}
+
+#result {
+font-size: 24px;
+text-align: center;
+margin-top: 20px;
+}
+
+#scoreboard {
+font-size: 24px;
+text-align: center;
+margin-top: 20px;
+}
   
