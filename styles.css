@@ -109,7 +109,8 @@ h1,
 h2,
 h3,
 .table-container,
-.segment-image {
+.segment-image,
+.icon-container {
     display: flex;
     justify-content: center;
 }
@@ -207,6 +208,8 @@ li {
 .project-icon {
     max-width: 70px;
     max-height: 70px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 /* Add solid gray border to project thumbnails */
@@ -215,13 +218,9 @@ li {
 }
 
 /* Style list and icon containers with flexbox */
-.list-container,
-.icon-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .list-container {
+	display: flex;
+	justify-content: space-evenly;
     margin-bottom: 10px;
 }
 
