@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tic-Tac-Toe Game</title>
-  <link rel="stylesheet" href="game-styles.css">
-</head>
-<body>
-  <h1>Tic-Tac-Toe Game</h1>
-  <div class="game-board">
-    <div class="row">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-    </div>
-    <div class="row">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-    </div>
-    <div class="row">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-    </div>
-  </div>
-  <div id="result"></div>
-  <div id="scoreboard">
-    <div>
-      Wins: <span id="wins">0</span>
-    </div>
-    
-    <div>
-      Losses: <span id="losses">0</span>
-    </div>
-    
-    <div>
-      Draws: <span id="draws">0</span>
-    </div>
-  </div>
-  <button id="reset-button">Reset</button>
-  <script src="tic-tac-toe.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Tic-Tac-Toe Game">
+        <meta name="keywords" content="HTML, web-developer, student">
+        <meta name="author" content="Brandon Gautier">
+        <!-- Source: "https://www.w3schools.com/tags/tag_meta.asp"-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe Game</title>
+		<!-- Source: https://developers.google.com/fonts/docs/getting_started -->
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900">
+        <!-- Source: https://favicon.io/favicon-generator/ -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="game-styles.css">
+    </head>
+
+	<body>
+		<h1>Tic-Tac-Toe Game</h1>
+
+		<div class="game-board">
+
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+
+		<div class="row">
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+
+		</div>
+		<div id="result"></div>
+
+		<div id="scoreboard">
+			<div>
+				Wins: <span id="wins">0</span>
+			</div>
+			
+			<div>
+				Losses: <span id="losses">0</span>
+			</div>
+
+			<div>
+				Draws: <span id="draws">0</span>
+			</div>
+		</div>
+
+		<button id="reset-button">Reset</button>
+
+		<script src="tic-tac-toe.js"></script>
+	</body>
+
 </html>

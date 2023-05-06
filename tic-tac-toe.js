@@ -28,8 +28,10 @@ class GameBoard {
         if (this.gameFinished || this.cells[cellIndex].textContent !== '') {
             return;
         }
+        
         this.cells[cellIndex].textContent = this.currentPlayer;
         this.checkWinner();
+        
         if (!this.gameFinished) {
             this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
             if (this.currentPlayer === 'O') {
@@ -43,10 +45,9 @@ class GameBoard {
     checkWinner() {
         for (let i = 0; i < this.winningCombinations.length; i++) {
             const [a, b, c] = this.winningCombinations[i];
-            if (
-                this.cells[a].textContent !== '' &&
-          this.cells[a].textContent === this.cells[b].textContent &&
-          this.cells[b].textContent === this.cells[c].textContent
+            if (this.cells[a].textContent !== '' &&
+                this.cells[a].textContent === this.cells[b].textContent &&
+                this.cells[b].textContent === this.cells[c].textContent
             ) {
                 this.cells[a].classList.add('winner');
                 this.cells[b].classList.add('winner');
@@ -103,19 +104,23 @@ class GameBoard {
         return emptyCells[Math.floor(Math.random() * emptyCells.length)];
     }
 }
-  
-// When page is refreshed, reset all game stats
-const gameBoard = new GameBoard();
-  
-// Add event listeners to each cell
-gameBoard.cells.forEach((cell, index) => {
-    cell.addEventListener('click', () => {
-        gameBoard.makeMove(index);
+
+// Code is wrapped in an in an immediately invoked function expression (IIFE) 
+// to avoid polluting the global namespace with variables and functions:
+(function() {
+    // When page is refreshed, reset all game stats
+    const gameBoard = new GameBoard();
+    
+    // Add event listeners to each cell
+    gameBoard.cells.forEach((cell, index) => {
+        cell.addEventListener('click', () => {
+            gameBoard.makeMove(index);
+        });
     });
-});
-  
-// Add event listener to reset button
-const resetButton = document.querySelector('#reset-button');
-resetButton.addEventListener('click', () => {
-    gameBoard.reset();
-});
+    
+    // Add event listener to reset button
+    const resetButton = document.querySelector('#reset-button');
+    resetButton.addEventListener('click', () => {
+        gameBoard.reset();
+    });
+})();
