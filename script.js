@@ -44,6 +44,7 @@
         // Get the button:
         let mybutton = document.getElementById("go-top");
     
+        // Display button when document is scrolled greater than 20 pixels
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "flex";
         } else {
@@ -108,6 +109,7 @@
         const navBar = document.getElementById("top-navbar");
         const toggleButton = document.getElementById("toggle-button");
     
+		// Toggle "adaptive" class on/off to display/hide nav links
         if (navBar.className === "navbar") {
             navBar.className += " adaptive";
             toggleButton.className += " adaptive";
@@ -131,10 +133,13 @@
     }
   
     // Validate first name
+	// Determines whether or not first name is valid
+	// Returns a Boolean value
     function validateFirstName() {
         let firstNameValid = false;
         const firstNameError = document.getElementById("first-name-error");
 
+        // Perform regex test on non-empty field
         if (firstName.value === "") {
             return 
         } else if (nameRegex.test(firstName.value)) {
@@ -148,10 +153,13 @@
     }
 
     // Validate last name
+	// Determines whether or not last name is valid
+	// Returns a Boolean value
     function validateLastName() {
         let lastNameValid = false;
         const lastNameError = document.getElementById("last-name-error");
 
+        // Perform regex test on non-empty field
         if (lastName.value === "") {
             return 
         } else if (nameRegex.test(lastName.value)) {
@@ -165,11 +173,14 @@
     }
 
     // Validate email
+	// Determines whether or not email is valid
+	// Returns a Boolean value
     function validateEmail() {
         let emailValid = false;
         const emailError = document.getElementById("email-error");
         const emailRegex = /^\S+@\S+\.\S+$/; // Email format
 
+        // Perform regex test on non-empty field
         if (email.value === "") {
             return 
         } else if (emailRegex.test(email.value)) {

@@ -1,4 +1,16 @@
+/**
+ * Unit 5 - Tic-Tac-Toe
+ * Interactive game versus a computer opponent
+ * 
+ * First player to place three of their symbols in a
+ * horizonatal, vertical, or diagonal line wins
+ * 
+ * Author: Brandon Gautier
+ */
+
+// Create a class to handle the primary game functions
 class GameBoard {
+	// Construct the game board and provide default settings
     constructor() {
         this.cells = Array.from(document.querySelectorAll('.cell'));
         this.currentPlayer = 'X';
@@ -32,16 +44,21 @@ class GameBoard {
         this.cells[cellIndex].textContent = this.currentPlayer;
         this.checkWinner();
         
+		// Switch current player if game is not finished
         if (!this.gameFinished) {
             this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
-            if (this.currentPlayer === 'O') {
-                const botMove = this.getBotMove();
+			if (this.currentPlayer === 'O') {
+                // Make bot appear to be 'thinking' before move
+				// Give it 500 ms delay before making move
+				const botMove = this.getBotMove();
                 setTimeout(() => this.makeMove(botMove), 500);
             }
         }
     }
   
     // Check if there is a winner
+	// For each value in winningCombinations:
+	// If three cells match and are not empty, then mark cells as winners
     checkWinner() {
         for (let i = 0; i < this.winningCombinations.length; i++) {
             const [a, b, c] = this.winningCombinations[i];
@@ -59,6 +76,8 @@ class GameBoard {
                 return;
             }
         }
+
+		// Verify whether game ended in a draw
         if (this.isDraw()) {
             this.gameFinished = true;
             this.result.textContent = 'Draw!';
@@ -80,7 +99,7 @@ class GameBoard {
         }
     }
   
-    // Reset the game board
+    // Reset the game board to default settings
     reset() {
         this.cells.forEach(cell => {
             cell.textContent = '';
@@ -93,6 +112,7 @@ class GameBoard {
   
     // Get bot move
     // Bot chooses a random move based on one of the empty cells
+	// Returns an integer that will be used as cell index
     getBotMove() {
         // Initializes empty cells upon each new turn
         const emptyCells = [];

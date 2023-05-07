@@ -1,17 +1,25 @@
+/* 
+* Style sheet for Tic-Tac-Toe project
+*/
+
+/* Use base-styles from original style sheet */
 @import url("styles.css");
 
+/* Style game board */
 .game-board {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
-  
+
+/* Style game board rows */
 .row {
 display: flex;
 justify-content: center;
 }
 
+/* Style game board cells */
 .cell {
 width: 115px;
 height: 115px;
@@ -28,14 +36,17 @@ background-color: rgb(77, 77, 99);
 color: rgb(221, 221, 221);
 }
 
+/* Lighten color of cell upon hover */
 .cell:hover {
 	background-color: rgb(92, 92, 118);
 }
 
+/* Add yellow highlight to winning cells */
 .cell.winner {
 background-color: rgb(209, 178, 0);
 }
 
+/* Style reset button */
 #reset-button {
 display: block;
 margin-top: 20px;
@@ -48,21 +59,25 @@ cursor: pointer;
 border-radius: 5px;
 }
 
+/* Lighten color of reset button upon hover */
 #reset-button:hover {
 	background-color: #57d05b;
 }
 
+/* Add flexbox to button */
 .button {
 	display: flex;
 	justify-content: center;
 }
 
+/* Style result output */
 #result {
 font-size: 24px;
 text-align: center;
 margin-top: 20px;
 }
 
+/* Style scoreboard */
 #scoreboard {
 font-size: 24px;
 text-align: center;
