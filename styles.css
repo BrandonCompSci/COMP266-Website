@@ -215,8 +215,6 @@ li {
 .project-icon {
     max-width: 70px;
     max-height: 70px;
-	padding-left: 1rem;
-	padding-right: 1rem;
 }
 
 /* Add gray border to project thumbnails */
@@ -351,6 +349,22 @@ background-color: #555;
     color: red;
     font-weight: bold;
 }
+
+/* Style icon background */
+.icon-background {
+	background-color: rgb(77, 77, 99);
+	padding: 10px;
+	border-radius: 5%;
+	margin: 0px 20px;
+	height: 80px;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid rgb(112, 112, 143);
+	border-right: 3px solid rgb(112, 112, 143);
+}
+
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/

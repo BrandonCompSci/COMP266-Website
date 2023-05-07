@@ -132,6 +132,7 @@ class GameBoard {
     const gameBoard = new GameBoard();
     
     // Add event listeners to each cell
+	// Call makeMove method when a cell is clicked
     gameBoard.cells.forEach((cell, index) => {
         cell.addEventListener('click', () => {
             gameBoard.makeMove(index);
