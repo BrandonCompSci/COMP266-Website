@@ -369,6 +369,26 @@ background-color: #555;
 	border-right: 3px solid var(--icon-border);
 }
 
+.hidden {
+	opacity: 0;
+	transition: all 1.2s;
+	filter: blur(3px);
+	transform: translateX(-100%);
+}
+  
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.icon:nth-child(2) {
+	transition-delay: 300ms;
+}
+
+.icon:nth-child(3) {
+	transition-delay: 500ms;
+}
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
@@ -434,4 +454,8 @@ Changes attributes if window is less than 800 px*/
     .fa-bars:hover {
         cursor: pointer;
     }
+
+	.icon-background {
+		margin: 0 10px;
+	}
 }

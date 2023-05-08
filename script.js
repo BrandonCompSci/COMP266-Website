@@ -111,11 +111,11 @@
     
 		// Toggle "adaptive" class on/off to display/hide nav links
         if (navBar.className === "navbar") {
-            navBar.className += " adaptive";
-            toggleButton.className += " adaptive";
+			navBar.classList.add("adaptive");
+			toggleButton.classList.add("adaptive");
         } else {
-            navBar.className = "navbar";
-            toggleButton.className = "theme-toggle";
+			navBar.classList.remove("adaptive");
+            toggleButton.classList.remove("adaptive");
         }
     }
 
@@ -192,4 +192,17 @@
 
         return emailValid;
     }
+
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("show");
+			} 
+		});
+	});
+	
+	const hiddenElements = document.querySelectorAll(".hidden");
+	hiddenElements.forEach((element) => observer.observe(element));
+
 })();
