@@ -1,4 +1,4 @@
-// Code is wrapped in an in an immediately invoked function expression (IIFE) 
+// Code is wrapped in an immediately invoked function expression (IIFE) 
 // to avoid polluting the global namespace with variables and functions:
 (function() {
     /**
@@ -42,13 +42,13 @@
     // <https://www.w3schools.com/howto/howto_js_scroll_to_top.asp> [Accessed 25 April 2023].
     function scrollFunction() {
         // Get the button:
-        let mybutton = document.getElementById("go-top");
+        let myButton = document.getElementById("go-top");
     
         // Display button when document is scrolled greater than 20 pixels
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "flex";
+            myButton.style.display = "flex";
         } else {
-            mybutton.style.display = "none";
+            myButton.style.display = "none";
         }
     }
 

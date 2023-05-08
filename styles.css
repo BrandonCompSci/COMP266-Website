@@ -15,7 +15,7 @@
 .light-mode {
     --color-theme-1: #E6F0E6;
     --color-theme-2: #F2F8FE;
-    --font-theme-1:: rgba(41, 41, 53, 1);
+    --font-theme-1: rgba(41, 41, 53, 1);
     --link-color: #0086ce;
     --button-background: rgba(155, 163, 251, 0.5);
 	--icon-background: #c8f3c8;

@@ -3,7 +3,7 @@
  * Interactive game versus a computer opponent
  * 
  * First player to place three of their symbols in a
- * horizonatal, vertical, or diagonal line wins
+ * horizontal, vertical, or diagonal line wins
  * 
  * Author: Brandon Gautier
  */
@@ -125,7 +125,7 @@ class GameBoard {
     }
 }
 
-// Code is wrapped in an in an immediately invoked function expression (IIFE) 
+// Code is wrapped in an immediately invoked function expression (IIFE) 
 // to avoid polluting the global namespace with variables and functions:
 (function() {
     // When page is refreshed, reset all game stats
