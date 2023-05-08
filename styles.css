@@ -7,6 +7,8 @@
     --font-theme-2: rgba(241, 90, 34, 1);
     --link-color: rgba(253, 185, 36, 1);
     --button-background: rgba(52, 104, 177, 0.5);
+	--icon-background: rgb(77, 77, 99);
+	--icon-border: rgb(112, 112, 143);
 }
 
 /* Add class for light mode colors */
@@ -15,7 +17,9 @@
     --color-theme-2: #F2F8FE;
     --font-theme-1:: rgba(41, 41, 53, 1);
     --link-color: #0086ce;
-    --button-background: rgba(184, 255, 184, 0.5);
+    --button-background: rgba(155, 163, 251, 0.5);
+	--icon-background: #c8f3c8;
+	--icon-border: rgb(208, 208, 226);
   }
 
 /* Make changes that affect entire html document */
@@ -352,7 +356,7 @@ background-color: #555;
 
 /* Style icon background */
 .icon-background {
-	background-color: rgb(77, 77, 99);
+	background-color: var(--icon-background);
 	padding: 10px;
 	border-radius: 5%;
 	margin: 0px 20px;
@@ -361,8 +365,8 @@ background-color: #555;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 2px solid rgb(112, 112, 143);
-	border-right: 3px solid rgb(112, 112, 143);
+	border-top: 2px solid var(--icon-border);
+	border-right: 3px solid var(--icon-border);
 }
 
 
