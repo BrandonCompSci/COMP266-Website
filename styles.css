@@ -355,7 +355,6 @@ background-color: #555;
 }
 
 .skills-background {
-	background-color: #f7df1e;
 	padding: 10px;
 	border-top-left-radius: 1rem;
 	height: 60px;
@@ -377,7 +376,6 @@ background-color: #555;
 .skills-container {
 	display: flex;
 	flex-direction: row;
-	border: 1px solid #f7df1e;
 	border-top-left-radius: 1.3rem;
 	margin: 0px 20px 20px 20px;
 }
@@ -393,6 +391,7 @@ background-color: #555;
 	justify-content: center;
 	font-weight: 700;
 	font-size: large;
+	color: rgba(208, 209, 211, 1);
 }
 
 .tech-exp {
@@ -404,6 +403,26 @@ background-color: #555;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+#js-skill {
+	background-color: #f7df1e;
+	border: 4px solid #f7df1e;
+}
+
+#python-skill {
+	background-color: #1eccf7;
+	border: 4px solid #1eccf7;
+}
+
+#r-skill {
+	background-color: #1eccf7;
+	border: 4px solid #1eccf7;
+}
+
+#html-skill {
+	background-color: rgb(244, 145, 64);
+	border: 4px solid rgb(244, 145, 64);
 }
 
 /* Style icon background */
