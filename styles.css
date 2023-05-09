@@ -354,6 +354,58 @@ background-color: #555;
     font-weight: bold;
 }
 
+.skills-background {
+	background-color: #f7df1e;
+	padding: 10px;
+	border-top-left-radius: 1rem;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-icon {
+	height: 50px;
+	width: 50px;
+}
+
+.skills-text {
+	color: black;
+}
+
+.skills-container {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #f7df1e;
+	border-top-left-radius: 1.3rem;
+	margin: 0px 20px 20px 20px;
+}
+
+.skills-exp {
+	background-color: black;
+	height: 60px;
+	width: 120px;
+	padding: 10px;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-weight: 700;
+	font-size: large;
+}
+
+.tech-exp {
+	font-weight: 700;
+	font-size: smaller;
+}
+
+.credentials-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* Style icon background */
 .icon-background {
 	background-color: var(--icon-background);
@@ -401,6 +453,26 @@ background-color: #555;
 	filter: blur(0);
 	transform: translateX(0);
   }
+
+/* Change scrollbar size on webkit and firefox browsers */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+
+/* Change scrollbar color on webkit and firefox browsers */
+::-webkit-scrollbar-thumb {
+	background-color: rgb(244, 112, 64);
+}
+
+/* for Firefox */
+::-moz-scrollbar {
+	width: 10px;
+}
+
+::-moz-scrollbar-thumb {
+	background-color: rgb(244, 112, 64);
+}
+
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
