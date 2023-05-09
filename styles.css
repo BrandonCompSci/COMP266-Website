@@ -13,12 +13,12 @@
 
 /* Add class for light mode colors */
 .light-mode {
-    --color-theme-1: #E6F0E6;
+	--color-theme-1: #d5fad5;
     --color-theme-2: #F2F8FE;
     --font-theme-1: rgba(41, 41, 53, 1);
     --link-color: #0086ce;
     --button-background: rgba(155, 163, 251, 0.5);
-	--icon-background: #c8f3c8;
+	--icon-background: #efffef;
 	--icon-border: rgb(208, 208, 226);
   }
 
@@ -367,14 +367,19 @@ background-color: #555;
 	align-items: center;
 	border-top: 2px solid var(--icon-border);
 	border-right: 3px solid var(--icon-border);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon-background:hover {
+	box-shadow: 0 0 20px rgba(34, 155, 242, 0.3);
 }
 
 .hidden {
 	opacity: 0;
-	transition: all 1.2s;
+	transition: 0.35s;
 	filter: blur(3px);
 	transform: translateX(-100%);
-}
+} 
   
 .show {
 	opacity: 1;
@@ -382,13 +387,20 @@ background-color: #555;
 	transform: translateX(0);
 }
 
-.icon:nth-child(2) {
+.hidden:nth-child(2) {
 	transition-delay: 300ms;
 }
 
-.icon:nth-child(3) {
+.hidden:nth-child(3) {
 	transition-delay: 500ms;
 }
+
+.icon-background:hover .hidden {
+	opacity: 1;
+	transition-delay: 0.35s;
+	filter: blur(0);
+	transform: translateX(0);
+  }
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/

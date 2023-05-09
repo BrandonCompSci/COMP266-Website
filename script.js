@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 // Code is wrapped in an immediately invoked function expression (IIFE) 
 // to avoid polluting the global namespace with variables and functions:
 (function() {
@@ -193,7 +194,6 @@
         return emailValid;
     }
 
-
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
@@ -205,4 +205,10 @@
 	const hiddenElements = document.querySelectorAll(".hidden");
 	hiddenElements.forEach((element) => observer.observe(element));
 
+	const iconBackgrounds = document.querySelectorAll(".icon-background");
+	iconBackgrounds.forEach((iconBackground) => {
+  		iconBackground.addEventListener("mouseover", () => {
+    		iconBackground.classList.remove("hidden");
+  		});
+	});
 })();
