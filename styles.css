@@ -45,7 +45,12 @@ html {
 	border-radius: 20px;
 	border: 1px solid var(--link-color);
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-	margin: 20px 0px;
+	margin: 30px 0px 50px 0px;
+}
+
+/* Overrides top margin of previous style */
+#contact-form.paragraph-container-1 {
+	margin-top: 0px;
 }
 
 .paragraph-container-1 {
@@ -54,6 +59,11 @@ html {
 
 .paragraph-container-2 {
 	background-color: var(--container-color-2);
+}
+
+.image-container {
+	margin-top: -30px;
+	margin-bottom: 20px;
 }
 
 /* Style body element */
@@ -134,11 +144,13 @@ h1 {
 h2 {
     letter-spacing: 1px;
 	font-size: 32px;
+	margin: 50px 0px 50px 0px;
 }
 
 /* Style h3 */
 h3 {
 	font-size: 22px;
+	margin-bottom: 30px;
 }
 
 /* Add flexbox to center items horizontally */
@@ -233,11 +245,6 @@ li {
     margin-bottom: 5px;
 }
 
-/* Add bottom padding to text of my projects */
-#my-projects-text {
-    padding-bottom: 10px;
-}
-
 /* Style project div */
 .project-div {
     /* Add yellow division line between projects */
@@ -261,12 +268,6 @@ li {
 	border: 5px solid var(--link-color);
 }
 
-/* Style list and icon containers with flexbox */
-.list-container {
-	display: flex;
-	justify-content: space-evenly;
-    margin-bottom: 10px;
-}
 
 /* Add margins to form container */
 .form-container {
@@ -439,7 +440,7 @@ background-color: #555;
 	border-radius: 20px;
 	border: 1px solid var(--link-color);
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 #js-skill {
@@ -569,11 +570,6 @@ Changes attributes if window is less than 800 px*/
         max-width: 100%;
     }
 
-    .list-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar a,
     .theme-toggle {
         display: none;
@@ -609,5 +605,9 @@ Changes attributes if window is less than 800 px*/
 	.paragraph-container-1,
 	.paragraph-container-2 {
 		padding: 20px;
+	}
+
+	table {
+		font-size: 12px;
 	}
 }
