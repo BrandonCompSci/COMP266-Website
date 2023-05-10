@@ -9,6 +9,8 @@
     --button-background: rgba(52, 104, 177, 0.5);
 	--icon-background: rgb(77, 77, 99);
 	--icon-border: rgb(112, 112, 143);
+	--container-color-1: rgba(41, 41, 53, 1);
+	--container-color-2: rgba(27, 54, 93, 1);
 }
 
 /* Add class for light mode colors */
@@ -20,6 +22,8 @@
     --button-background: rgba(155, 163, 251, 0.5);
 	--icon-background: #efffef;
 	--icon-border: rgb(208, 208, 226);
+	--container-color-1: #d5fad5;
+	--container-color-2: #F2F8FE;
   }
 
 /* Make changes that affect entire html document */
@@ -30,6 +34,26 @@ html {
 
     /* Add smooth scrolling */
     scroll-behavior: smooth;
+}
+
+.paragraph-container-1,
+.paragraph-container-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 40px;
+	border-radius: 20px;
+	border: 1px solid var(--link-color);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	margin: 20px 0px;
+}
+
+.paragraph-container-1 {
+	background-color: var(--container-color-1);
+}
+
+.paragraph-container-2 {
+	background-color: var(--container-color-2);
 }
 
 /* Style body element */
@@ -102,13 +126,19 @@ a:hover {
 /* Style h1 */
 h1 {
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 50px;
     font-variant: small-caps;
 }
 
 /* Style h2 */
 h2 {
     letter-spacing: 1px;
+	font-size: 32px;
+}
+
+/* Style h3 */
+h3 {
+	font-size: 22px;
 }
 
 /* Add flexbox to center items horizontally */
@@ -378,6 +408,7 @@ background-color: #555;
 	flex-direction: row;
 	border-top-left-radius: 1.3rem;
 	margin: 0px 20px 20px 20px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .skills-exp {
@@ -402,7 +433,13 @@ background-color: #555;
 .credentials-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
+	background-color: rgb(77, 77, 99);
+	padding: 20px 10px 0px 10px;
+	border-radius: 20px;
+	border: 1px solid var(--link-color);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+	margin-bottom: 30px;
 }
 
 #js-skill {
@@ -410,17 +447,19 @@ background-color: #555;
 	border: 4px solid #f7df1e;
 }
 
-#python-skill {
-	background-color: #1eccf7;
-	border: 4px solid #1eccf7;
-}
-
-#r-skill {
+#python-skill,
+#r-skill,
+#css-skill {
 	background-color: #1eccf7;
 	border: 4px solid #1eccf7;
 }
 
 #html-skill {
+	background-color: rgb(244, 145, 64);
+	border: 4px solid rgb(244, 145, 64);
+}
+
+#sql-skill {
 	background-color: rgb(244, 145, 64);
 	border: 4px solid rgb(244, 145, 64);
 }
@@ -473,9 +512,9 @@ background-color: #555;
 	transform: translateX(0);
   }
 
-/* Change scrollbar size on webkit and firefox browsers */
+/* Change scrollbar size on webkit browsers */
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
   }
 
 /* Change scrollbar color on webkit and firefox browsers */
@@ -483,11 +522,12 @@ background-color: #555;
 	background-color: rgb(244, 112, 64);
 }
 
-/* for Firefox */
+/* Change scrollbar size on firefox browsers */
 ::-moz-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
+/* Change scrollbar color on firefox browsers */
 ::-moz-scrollbar-thumb {
 	background-color: rgb(244, 112, 64);
 }
@@ -560,5 +600,14 @@ Changes attributes if window is less than 800 px*/
 
 	.icon-background {
 		margin: 0 10px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.paragraph-container-1,
+	.paragraph-container-2 {
+		padding: 20px;
 	}
 }
