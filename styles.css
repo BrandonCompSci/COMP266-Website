@@ -270,8 +270,8 @@ li {
 
 /* Make every project icon uniform size */
 .project-icon {
-    max-width: 70px;
-    max-height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
 /* Add gray border to project thumbnails */
@@ -478,8 +478,8 @@ background-color: #555;
 
 #r-skill,
 #github-skill {
-	background-color: #991ef7;
-	border: 4px solid #991ef7;
+	background-color: #b65cfc;
+	border: 4px solid #b65cfc;;
 }
 
 #sql-skill,
@@ -502,7 +502,7 @@ background-color: #555;
 
 /* Style icon background */
 .icon-background {
-	background-color: var(--icon-background);
+	/* background-color: var(--icon-background); */
 	padding: 10px;
 	border-radius: 5%;
 	margin: 0px 20px;
@@ -511,9 +511,34 @@ background-color: #555;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 2px solid var(--icon-border);
-	border-right: 3px solid var(--icon-border);
+	/* border-top: 2px solid var(--icon-border);
+	border-right: 3px solid var(--icon-border); */
+	border: 2px solid black;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.orange-background {
+	background-color: rgb(244, 145, 64);
+}
+
+.blue-background {
+	background-color: #1eccf7;
+}
+
+.yellow-background {
+	background-color: #f7df1e;
+}
+
+.purple-background {
+	background-color: #b65cfc;
+}
+
+.green-background {
+	background-color: #3bee1c;
+}
+
+.red-background {
+	background-color: #fd4952;
 }
 
 .icon-background:hover {
