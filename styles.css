@@ -464,25 +464,38 @@ background-color: #555;
 	margin-bottom: 50px;
 }
 
+#bash-skill,
 #js-skill {
 	background-color: #f7df1e;
 	border: 4px solid #f7df1e;
 }
 
 #python-skill,
+#excel-skill {
+	background-color: #3bee1c;
+	border: 4px solid #3bee1c;
+}
+
 #r-skill,
+#github-skill {
+	background-color: #991ef7;
+	border: 4px solid #991ef7;
+}
+
+#sql-skill,
+#photoshop-skill {
+	background-color: #fd4952;
+	border: 4px solid #fd4952;
+}
+
 #css-skill,
 #vscode-skill {
 	background-color: #1eccf7;
 	border: 4px solid #1eccf7;
 }
 
-#html-skill {
-	background-color: rgb(244, 145, 64);
-	border: 4px solid rgb(244, 145, 64);
-}
-
-#sql-skill {
+#html-skill,
+#git-skill {
 	background-color: rgb(244, 145, 64);
 	border: 4px solid rgb(244, 145, 64);
 }
