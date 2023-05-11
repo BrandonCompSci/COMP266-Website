@@ -194,7 +194,16 @@
         return emailValid;
     }
 
+	/**
+	 * 
+	 * JavaScript code to make entries in project section 'slide' into view
+	 * 
+	 */
+
+	// IntersectionObserver executes a function when observed entries come into view
+	// Add the class 'show' to entry when it comes into view
 	const observer = new IntersectionObserver((entries) => {
+		// Loop over every entry
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add("show");
@@ -202,9 +211,13 @@
 		});
 	});
 	
+	// Create set of target elements to observe
 	const hiddenElements = document.querySelectorAll(".hidden");
+	// Observe all 'hidden' elements
 	hiddenElements.forEach((element) => observer.observe(element));
 
+	// Event listener for icon backgrounds
+	// When mouse is hovered over icons, remove 'hidden' class
 	const iconBackgrounds = document.querySelectorAll(".icon-background");
 	iconBackgrounds.forEach((iconBackground) => {
   		iconBackground.addEventListener("mouseover", () => {

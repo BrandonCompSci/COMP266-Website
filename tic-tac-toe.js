@@ -11,20 +11,23 @@
 // Create a class to handle the primary game functions
 class GameBoard {
 	// Construct the game board and provide default settings
+	// The user (human) goes first and plays with the 'X' symbol
     constructor() {
         this.cells = Array.from(document.querySelectorAll('.cell'));
         this.currentPlayer = 'X';
         this.gameFinished = false;
+
+		// Provide an array of all winning combinations
         this.winningCombinations = [
         // Rows
             [0, 1, 2],
             [3, 4, 5],
             [6, 7, 8],
-            // Columns
+        // Columns
             [0, 3, 6],
             [1, 4, 7],
             [2, 5, 8],
-            // Diagonals
+        // Diagonals
             [0, 4, 8],
             [2, 4, 6]
         ];
@@ -32,15 +35,19 @@ class GameBoard {
         this.wins = document.querySelector('#wins');
         this.losses = document.querySelector('#losses');
         this.draws = document.querySelector('#draws');
+
+		// Default text output when game is still in progress
         this.result.textContent = 'Awaiting result ...';
     }
   
     // Make a move at the given cell index
     makeMove(cellIndex) {
+		// Check if game is finished or all cells are full
         if (this.gameFinished || this.cells[cellIndex].textContent !== '') {
             return;
         }
         
+		// Set text content of selected cell to symbol of current player
         this.cells[cellIndex].textContent = this.currentPlayer;
         this.checkWinner();
         
@@ -62,16 +69,21 @@ class GameBoard {
     checkWinner() {
         for (let i = 0; i < this.winningCombinations.length; i++) {
             const [a, b, c] = this.winningCombinations[i];
-            if (this.cells[a].textContent !== '' &&
+            // Check if three cells within any of the 'winning combinations' match
+			if (this.cells[a].textContent !== '' &&
                 this.cells[a].textContent === this.cells[b].textContent &&
                 this.cells[b].textContent === this.cells[c].textContent
             ) {
+				// Mark the three winning cells as 'winner'
                 this.cells[a].classList.add('winner');
                 this.cells[b].classList.add('winner');
                 this.cells[c].classList.add('winner');
-                this.gameFinished = true;
+                
+				// Since a winner is found, end the game
+				this.gameFinished = true;
+
+				// Below game board, display the player who won and update overall score
                 this.result.textContent = `Player ${this.currentPlayer} has won!`;
-          
                 this.updateScore();
                 return;
             }
@@ -93,8 +105,10 @@ class GameBoard {
     // Update Score
     updateScore() {
         if (this.currentPlayer === 'X') {
+			// Increment wins by 1 if the user wins
             this.wins.textContent = Number(this.wins.textContent) + 1;
         } else {
+			// Increment losses by 1 if the user loses
             this.losses.textContent = Number(this.losses.textContent) + 1;
         }
     }
@@ -112,15 +126,18 @@ class GameBoard {
   
     // Get bot move
     // Bot chooses a random move based on one of the empty cells
-	// Returns an integer that will be used as cell index
     getBotMove() {
         // Initializes empty cells upon each new turn
+		// Create an array to store the empty cell indices
+		// Iterate over all cells -- when empty cell is found, add it to the array
         const emptyCells = [];
         for (let i = 0; i < this.cells.length; i++) {
             if (this.cells[i].textContent === '') {
                 emptyCells.push(i);
             }
         }
+
+		// Returns an integer that will be used as the cell index
         return emptyCells[Math.floor(Math.random() * emptyCells.length)];
     }
 }

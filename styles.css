@@ -38,6 +38,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Create box effect for paragraphs */
 .paragraph-container-1,
 .paragraph-container-2 {
 	display: flex;
@@ -63,6 +64,7 @@ html {
 	background-color: var(--container-color-2);
 }
 
+/* Add margins to image container */
 .image-container {
 	margin-top: -30px;
 	margin-bottom: 20px;
@@ -406,6 +408,7 @@ background-color: #555;
     font-weight: bold;
 }
 
+/* Style skills background */
 .skills-background {
 	padding: 10px;
 	border-top-left-radius: 1rem;
@@ -416,6 +419,7 @@ background-color: #555;
 	align-items: center;
 }
 
+/* Assign height and width to skill icons */
 .skill-icon {
 	height: 50px;
 	width: 50px;
@@ -425,6 +429,7 @@ background-color: #555;
 	color: black;
 }
 
+/* Format skills container */
 .skills-container {
 	display: flex;
 	flex-direction: row;
@@ -433,6 +438,7 @@ background-color: #555;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
+/* Format skills experience box */
 .skills-exp {
 	background-color: black;
 	height: 60px;
@@ -452,6 +458,7 @@ background-color: #555;
 	font-size: smaller;
 }
 
+/* Style credentials container */
 .credentials-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -511,10 +518,8 @@ background-color: #555;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* border-top: 2px solid var(--icon-border);
-	border-right: 3px solid var(--icon-border); */
-	border: 2px solid black;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+	border: 2px solid white;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
 .orange-background {
@@ -541,37 +546,35 @@ background-color: #555;
 	background-color: #fd4952;
 }
 
+/* Display box shadow upon mouse hover */
 .icon-background:hover {
-	box-shadow: 0 0 20px rgba(34, 155, 242, 0.3);
+	box-shadow: 0 0 40px rgba(34, 155, 242, 0.6);
 }
 
+/* Make 'hidden' class transition in from the left */
 .hidden {
 	opacity: 0;
 	transition: 0.35s;
 	filter: blur(3px);
 	transform: translateX(-100%);
 } 
-  
+
+/* Reveal the hidden class */
 .show {
 	opacity: 1;
 	filter: blur(0);
 	transform: translateX(0);
 }
 
+/* Create 'stagger' effect for 2nd image */
 .hidden:nth-child(2) {
 	transition-delay: 300ms;
 }
 
+/* Create 'stagger' effect for 3rd image */
 .hidden:nth-child(3) {
 	transition-delay: 500ms;
 }
-
-.icon-background:hover .hidden {
-	opacity: 1;
-	transition-delay: 0.35s;
-	filter: blur(0);
-	transform: translateX(0);
-  }
 
 /* Change scrollbar size on webkit browsers */
 ::-webkit-scrollbar {
@@ -592,7 +595,6 @@ background-color: #555;
 ::-moz-scrollbar-thumb {
 	background-color: rgb(244, 112, 64);
 }
-
 
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
