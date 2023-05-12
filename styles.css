@@ -581,7 +581,7 @@ background-color: #555;
 	width: 8px;
   }
 
-/* Change scrollbar color on webkit and firefox browsers */
+/* Change scrollbar color on webkit browsers */
 ::-webkit-scrollbar-thumb {
 	background-color: rgb(244, 112, 64);
 }

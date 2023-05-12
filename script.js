@@ -1,4 +1,3 @@
-/* eslint-disable no-mixed-spaces-and-tabs */
 // Code is wrapped in an immediately invoked function expression (IIFE) 
 // to avoid polluting the global namespace with variables and functions:
 (function() {
@@ -220,8 +219,8 @@
 	// When mouse is hovered over icons, remove 'hidden' class
 	const iconBackgrounds = document.querySelectorAll(".icon-background");
 	iconBackgrounds.forEach((iconBackground) => {
-  		iconBackground.addEventListener("mouseover", () => {
-    		iconBackground.classList.remove("hidden");
-  		});
+		iconBackground.addEventListener("mouseover", () => {
+			iconBackground.classList.remove("hidden");
+		});
 	});
 })();
