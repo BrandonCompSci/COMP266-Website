@@ -454,6 +454,12 @@ background-color: #555;
 	color: rgba(208, 209, 211, 1);
 }
 
+/* Make skills-exp font black and bold upon hover */
+.skills-exp:hover {
+	color: black;
+	font-weight: 900;
+}
+
 .tech-exp {
 	font-weight: 700;
 	font-size: smaller;
@@ -523,26 +529,32 @@ background-color: #555;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
+.skills-exp:hover.orange-container,
 .orange-background {
 	background-color: rgb(244, 145, 64);
 }
 
+.skills-exp:hover.blue-container,
 .blue-background {
 	background-color: #1eccf7;
 }
 
+.skills-exp:hover.yellow-container,
 .yellow-background {
 	background-color: #f7df1e;
 }
 
+.skills-exp:hover.purple-container,
 .purple-background {
 	background-color: #b65cfc;
 }
 
+.skills-exp:hover.green-container,
 .green-background {
 	background-color: #3bee1c;
 }
 
+.skills-exp:hover.red-container,
 .red-background {
 	background-color: #fd4952;
 }
