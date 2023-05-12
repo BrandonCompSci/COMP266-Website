@@ -76,6 +76,7 @@ body {
     color: var(--font-theme-1);
     background-color: var(--color-theme-1);
     margin: 0px;
+	font-size: 110%;
 }
 
 /* Style header */
@@ -128,7 +129,7 @@ button:hover {
 /* Style nav links */
 nav a{
     padding: 0px 30px 25px 30px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -140,20 +141,20 @@ a:hover {
 /* Style h1 */
 h1 {
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 54px;
     font-variant: small-caps;
 }
 
 /* Style h2 */
 h2 {
     letter-spacing: 1px;
-	font-size: 32px;
+	font-size: 34px;
 	margin: 50px 0px 50px 0px;
 }
 
 /* Style h3 */
 h3 {
-	font-size: 22px;
+	font-size: 25px;
 	margin-bottom: 30px;
 }
 
@@ -192,7 +193,7 @@ h3,
 .segment-text{
     max-width: 50%;
     padding: 0px;
-    margin: 0px 40px;
+    /* margin: 0px 40px; */
 }
 
 /* Specify dimensions of student-pic */
@@ -357,7 +358,7 @@ textarea {
 
 /* Adjust footer font size */
 footer {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* Align copyright info */
@@ -434,7 +435,7 @@ background-color: #555;
 	display: flex;
 	flex-direction: row;
 	border-top-left-radius: 1.3rem;
-	margin: 0px 20px 20px 20px;
+	margin: 0px 25px 20px 25px;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
@@ -600,7 +601,8 @@ background-color: #555;
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {
     .segment-text {
-        max-width: 80%;
+        max-width: 92%;
+		margin: 0px 15px;
     }
 }
 
@@ -628,9 +630,11 @@ Changes attributes if window is less than 800 px*/
         min-width: 400px;
     }
 
-    img {
-        max-width: 100%;
-    }
+	img,
+	.icon-container {
+		max-width: 100%;
+		height: auto;
+	}
 
     .navbar a,
     .theme-toggle {
@@ -649,7 +653,7 @@ Changes attributes if window is less than 800 px*/
     .fa-bars {
         display: block;
         font-size: 1.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 1.3rem;
     }
 
     .fa-bars:hover {
@@ -658,10 +662,12 @@ Changes attributes if window is less than 800 px*/
 
 	.icon-background {
 		margin: 0 10px;
+		width: 70px;
+		height: 70px;
 	}
 
 	h1 {
-		font-size: 40px;
+		font-size: 42px;
 	}
 
 	.paragraph-container-1,

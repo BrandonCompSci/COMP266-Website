@@ -201,6 +201,7 @@
 
 	// IntersectionObserver executes a function when observed entries come into view
 	// Add the class 'show' to entry when it comes into view
+	// Code skeleton from: https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver
 	const observer = new IntersectionObserver((entries) => {
 		// Loop over every entry
 		entries.forEach((entry) => {
