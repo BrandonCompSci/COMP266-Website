@@ -609,6 +609,14 @@ background-color: #555;
 	background-color: rgb(244, 112, 64);
 }
 
+#top-page {
+	height: 60vh;
+}
+
+.typed {
+	display: block;
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {

@@ -224,4 +224,12 @@
 			iconBackground.classList.remove("hidden");
 		});
 	});
+
+	const typed = new Typed(".typed", {
+		strings: ["student.", " coder."],
+		// stringsElement: '#typed-strings',
+		typeSpeed: 100,
+		backSpeed: 100,
+		loop: true,
+	});
 })();
