@@ -225,11 +225,12 @@
 		});
 	});
 
+	// typed.js code for top-page animation
 	const typed = new Typed(".typed", {
-		strings: ["student.", " coder."],
-		// stringsElement: '#typed-strings',
-		typeSpeed: 100,
-		backSpeed: 100,
+		strings: ["&lt;div&gt;eloper.", "student.", "gamer.", "coder."],
+		typeSpeed: 60,
+		backSpeed: 60,
+		backDelay: 1300,
 		loop: true,
 	});
 })();

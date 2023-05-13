@@ -609,12 +609,12 @@ background-color: #555;
 	background-color: rgb(244, 112, 64);
 }
 
-#top-page {
-	height: 60vh;
-}
-
-.typed {
-	display: block;
+.top-text-static,
+.top-text-dynamic {
+	color: rgba(208, 209, 211, 1);
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	z-index: 2;
+	position: absolute;
 }
 
 /* Responsive layout - 
