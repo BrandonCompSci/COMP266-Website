@@ -1,0 +1,41 @@
+/* plugin styles */
+.expandy{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.expandy.expandy-hidden{
+    display: none;
+}
+.expandy-toggle{
+    cursor: pointer;   
+}
+
+.toggle-all{
+    float: right;
+    cursor: pointer;
+    font-size: .8em;
+    font-style: italic;
+    text-decoration: underline;
+	display: none;
+}
+
+/* show/hide indicators */
+.expandy-toggle.plusminus:after{
+    content: ' [-]';
+}
+.expandy-toggle.expandy-hidden.plusminus:after{
+    content: ' [+]';
+}
+.expandy-toggle.triangle:after{
+    content: ' \25BE';
+}
+.expandy-toggle.expandy-hidden.triangle:after{
+    content: ' \25B8';
+}
+.expandy-toggle.arrow:after{
+    content: ' \2191';
+}
+.expandy-toggle.expandy-hidden.arrow:after{
+    content: ' \2193';
+}

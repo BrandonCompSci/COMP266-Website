@@ -17,11 +17,20 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <!-- Provides access to the fontawesome API -->
         <script src="https://kit.fontawesome.com/72e5839d36.js" crossorigin="anonymous"></script>
+
 		<!-- Link to an external JavaScript file -->
 		<script defer src="scripts/script.js"></script>
 
-		<!-- Link to typed.js library written by Matt Boldt -->
+		<!-- Load JQuery -->
+		<script src="scripts/jquery.js"></script>
+
+		<!-- Use CDN to load "typed.js" library written by Matt Boldt -->
 		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<!-- Load JQuery "expandy" plugin -->
+		<!-- Source: https://www.jqueryscript.net/accordion/Accordion-Style-jQuery-Plugin-To-Expand-Collapse-Elements.html -->
+		<link href="css/expandy.css" rel="stylesheet">
+		<script src="scripts/expandy.js"></script>
 	</head>
     
     <body>
@@ -143,27 +152,33 @@
 								The following table will be used to document my current degree progress. I plan to update it whenever new grades become available. <br><br>
 							</div>
 
-							<div class="table-container">
-								<table>
-									<tr>
-										<th>Course Code</th>
-										<th>Course Name</th>
-										<th>Course Grade</th>
-									</tr>
-
-									<tr>
-										<td>COMP 200</td>
-										<td>Intro. to Computing and Information Systems</td>
-										<td>A+</td>
-									</tr>
-
-									<tr>
-										<td>COMP 266</td>
-										<td>Intro. to Web Programming</td>
-										<td>In Progress</td>
-									</tr>
-								</table>
+							<div class="expand">
+								<h3>Course Table&nbsp</h3>
+								
+								<div class="table-container">
+									<table>
+										<tr>
+											<th>Course Code</th>
+											<th>Course Name</th>
+											<th>Course Grade</th>
+										</tr>
+	
+										<tr>
+											<td>COMP 200</td>
+											<td>Intro. to Computing and Information Systems</td>
+											<td>A+</td>
+										</tr>
+	
+										<tr>
+											<td>COMP 266</td>
+											<td>Intro. to Web Programming</td>
+											<td>In Progress</td>
+										</tr>
+									</table>
+								</div>
 							</div>
+
+							
 						</div>
                         <!-- TO DO LIST -->
                         <h3>

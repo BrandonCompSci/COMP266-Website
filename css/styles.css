@@ -654,6 +654,17 @@ background-color: #555;
 	font-weight: 700;
 }
 
+.expand h3 {
+	font-size: 1.2rem;
+	margin-top: -0.2rem;
+	margin-bottom: -0.3rem;
+	color: var(--link-color);
+}
+
+.expand table {
+	margin-top: 1.8rem;
+}
+
 /* Responsive layout - 
 Changes attributes if window is less than 1279 px*/
 @media screen and (max-width: 1279px) {
