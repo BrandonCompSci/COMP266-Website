@@ -609,12 +609,49 @@ background-color: #555;
 	background-color: rgb(244, 112, 64);
 }
 
+/* use flexbox to style top-section */
+#top-section {
+	display: flex;
+	justify-content: center;
+}
+
+/* Style monitor container */
+.monitor-container {
+	max-width: 40%;
+	margin: 2% 0% 5% 0%;
+	position: relative;
+}
+
+.monitor-container img {
+	max-width: 100%;
+}
+
+/* Style text within "computer monitor" image */
 .top-text-static,
-.top-text-dynamic {
+.middle-text-static,
+.bottom-text-dynamic {
 	color: rgba(208, 209, 211, 1);
 	font-family: Monaco, Consolas, "Lucida Console", monospace;
 	z-index: 2;
 	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 4vw;
+}
+
+.top-text-static {
+	top: 18%;
+}
+
+.middle-text-static {
+	top: 34%;
+}
+
+/* Style bottom dynamic text */
+.bottom-text-dynamic {
+	top: 50%;
+	color: rgba(253, 185, 36, 1);
+	font-weight: 700;
 }
 
 /* Responsive layout - 

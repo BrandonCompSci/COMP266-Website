@@ -225,9 +225,12 @@
 		});
 	});
 
-	// typed.js code for top-page animation
+	// typed.js code for top-page 'typewriter' animation
 	const typed = new Typed(".typed", {
-		strings: ["&lt;div&gt;eloper.", "student.", "gamer.", "coder."],
+		strings: ["&nbsp;&lt;div&gt;eloper.", 
+				"&nbsp;student.", 
+				"&nbsp;gamer.", 
+				"&nbsp;coder."],
 		typeSpeed: 60,
 		backSpeed: 60,
 		backDelay: 1300,
