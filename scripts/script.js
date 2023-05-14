@@ -24,9 +24,9 @@
         // If 'light-mode' class is present on body element, display image of moon; 
         // if not present, display image of sun
         if (body.classList.contains("light-mode")) {
-            toggleIcon.src = "./images/moon.png";
+            toggleIcon.src = "images/moon.png";
         } else {
-            toggleIcon.src = "./images/sun.png";
+            toggleIcon.src = "images/sun.png";
         }
     }
 
@@ -225,6 +225,12 @@
 		});
 	});
 
+	/**
+     * 
+     * START of Unit 6 Code
+     * 
+     */
+
 	// typed.js code for top-page 'typewriter' animation
 	const typed = new Typed(".typed", {
 		strings: ["&nbsp;&lt;div&gt;eloper.", 
@@ -236,4 +242,6 @@
 		backDelay: 1300,
 		loop: true,
 	});
+	
 })();
+
