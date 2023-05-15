@@ -267,7 +267,7 @@
 			indicator: 'plusminus',
 		});
 
-		// I made an adjustFontSize plugin in jQuery
+		// I made an "adjustFontSize" plugin in jQuery
 		// One button increases font size. One button decreases font size
 		$('.text').adjustFontSize();
 	})

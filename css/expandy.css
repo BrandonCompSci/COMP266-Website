@@ -8,7 +8,11 @@
     display: none;
 }
 .expandy-toggle{
-    cursor: pointer;   
+    cursor: none;   
+}
+
+.expandy-toggle:hover {
+	text-decoration: underline;
 }
 
 .toggle-all{

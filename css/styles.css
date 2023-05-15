@@ -122,11 +122,6 @@ nav {
     border: none;
 }
 
-/* Show pointer upon mouse hover */
-button:hover {
-    cursor: pointer;
-}
-
 /* Style nav links */
 nav a{
     padding: 0px 30px 25px 30px;
@@ -353,7 +348,6 @@ textarea {
 
 /* Change color of 'Submit' button upon mouse hover */
 .submit-container input:hover {
-    cursor: pointer;
     background-color: rgba(253, 185, 36, 1);
 }
 
@@ -383,7 +377,7 @@ footer {
     border: 2px solid black; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: var(--button-background); /* Set a background color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    cursor: none; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 100%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
@@ -395,7 +389,9 @@ footer {
 
 /* Add a dark-grey background on hover */
 #go-top:hover {
-background-color: #555;
+	background-color: #555;
+	width: 70px;
+	height: 70px;
 }
 
 /* Hide hamburger menu when not in mobile mode */
@@ -597,16 +593,6 @@ background-color: #555;
 
 /* Change scrollbar color on webkit browsers */
 ::-webkit-scrollbar-thumb {
-	background-color: rgb(244, 112, 64);
-}
-
-/* Change scrollbar size on firefox browsers */
-::-moz-scrollbar {
-	width: 8px;
-}
-
-/* Change scrollbar color on firefox browsers */
-::-moz-scrollbar-thumb {
 	background-color: rgb(244, 112, 64);
 }
 

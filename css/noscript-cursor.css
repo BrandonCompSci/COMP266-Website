@@ -1,0 +1,4 @@
+/* Use default cursor when JavaScript is disabled */
+html, * {
+	cursor: default;
+}

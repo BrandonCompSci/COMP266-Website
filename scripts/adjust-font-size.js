@@ -1,3 +1,9 @@
+/**
+ * Unit 6 adjust-font-size jQuery plugin
+ * 
+ * Displays two buttons that can be used to toggle font size
+ */
+
 (function($) {
     $.fn.adjustFontSize = function(options) {
         let settings = $.extend({

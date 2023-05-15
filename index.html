@@ -21,7 +21,7 @@
 		<!-- Link to an external JavaScript file -->
 		<script defer src="scripts/script.js"></script>
 
-		<!-- Load jQuery -->
+		<!-- Load jQuery v3.7.0 -->
 		<script src="scripts/jquery.js"></script>
 
 		<!-- Use CDN to load "typed.js" library written by Matt Boldt -->
@@ -37,6 +37,15 @@
 		<link href="css/adjust-font-size.css" rel="stylesheet">
 		<script src="scripts/adjust-font-size.js"></script>
 
+		<!-- Load jQuery "custom-cursor" plugin -->
+		<!-- Source: https://dev.to/b4two/how-to-make-a-custom-cursor-with-css-and-jquery-5g3m -->
+		<link href="css/custom-cursor.css" rel="stylesheet">
+		<script src="scripts/custom-cursor.js"></script>
+
+		<noscript>
+			<!-- Use default cursor when JavaScript is disabled -->
+			<link href="css/noscript-cursor.css" rel="stylesheet">
+		</noscript>
 	</head>
     
     <body>
@@ -628,5 +637,7 @@
                 Last modification: <span class="date"><time datetime="2023-05-12">May 12, 2023</time></span> by Brandon Gautier
             </p>
         </footer>
+
+		<div class="cursor"></div>
     </body>
 </html>
