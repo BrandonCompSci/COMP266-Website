@@ -244,7 +244,7 @@
 	});
 	
 	$(document).ready(function() {
-		// "expandy" JQuery plug-in
+		// "expandy" jQuery plug-in
 		// Makes accordion-style collapsing and expanding animations
 		$('.expand').makeExpander({
 
@@ -266,6 +266,13 @@
 			// 'plusminus' or 'arrow'
 			indicator: 'plusminus',
 		});
+
+		// I made an adjustFontSize plugin in jQuery
+		// One button increases font size. One button decreases font size
+		$('.text').adjustFontSize();
 	})
+
+	
+	
 })();
 

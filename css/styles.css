@@ -31,7 +31,7 @@
 /* Make changes that affect entire html document */
 html {
     word-spacing: 2px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     text-align: justify;
 
     /* Add smooth scrolling */
@@ -98,6 +98,7 @@ header {
 a {
     color: var(--link-color);
     text-decoration: none;
+	font-weight: 600;
 }
 
 /* Style nav bar with flexbox*/
@@ -656,13 +657,37 @@ background-color: #555;
 
 .expand h3 {
 	font-size: 1.2rem;
-	margin-top: -0.2rem;
+	margin-top: -0.8rem;
 	margin-bottom: -0.3rem;
 	color: var(--link-color);
 }
 
 .expand table {
 	margin-top: 1.8rem;
+}
+
+.font-size-adjust button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.4rem 0.25rem;
+    border: 1px solid black;
+    border-radius: 3px;
+	background-color: rgba(202, 202, 202, 0.1);
+    color: #333;
+    cursor: pointer;
+	position: sticky;
+	display: block;
+	width: 80%;
+}
+
+.font-size-adjust button:hover {
+    background-color: var(--link-color);
+    color: #000;
+}
+
+.font-size-adjust button:active {
+    background-color: #aaa;
+    color: #fff;
 }
 
 /* Responsive layout - 
@@ -745,5 +770,10 @@ Changes attributes if window is less than 800 px*/
 
 	table {
 		font-size: 12px;
+	}
+
+	/* Disable font-size-adjust buttons for mobile users */
+	.font-size-adjust button {
+		display: none;
 	}
 }
