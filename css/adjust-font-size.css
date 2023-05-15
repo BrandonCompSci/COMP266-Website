@@ -1,0 +1,34 @@
+/* 
+* Style sheet for adjust-font-size jQuery plugin
+*/
+
+.font-size-adjust button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.4rem 0.25rem;
+    border: 1px solid black;
+    border-radius: 3px;
+	background-color: rgba(202, 202, 202, 0.1);
+    color: #333;
+    cursor: pointer;
+	position: sticky;
+	display: block;
+	width: 80%;
+}
+
+.font-size-adjust button:hover {
+    background-color: var(--link-color);
+    color: #000;
+}
+
+.font-size-adjust button:active {
+    background-color: #aaa;
+    color: #fff;
+}
+
+/* Disable font-size-adjust buttons for mobile users */
+@media screen and (max-width: 800px) {
+	.font-size-adjust button {
+		display: none;
+	}
+}

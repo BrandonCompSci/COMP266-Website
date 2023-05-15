@@ -271,8 +271,5 @@
 		// One button increases font size. One button decreases font size
 		$('.text').adjustFontSize();
 	})
-
-	
-	
 })();
 
