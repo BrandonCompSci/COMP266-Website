@@ -161,4 +161,28 @@ class GameBoard {
     resetButton.addEventListener('click', () => {
         gameBoard.reset();
     });
+
+	/**
+	 * 
+	 * Unit 6 code
+	 * 
+	 */
+
+	// "sweetalert2" plugin configuration
+	function sweetAlert() {
+		Swal.fire({
+			titleText: 'Rules',
+			text: 'Tic-Tac-Toe is a classic two-player game played on a grid of 3x3 squares.' + 
+				' The objective of the game is to be the first player to get three of their marks in a row,' +
+				' either horizontally, vertically, or diagonally.',
+			icon: 'info',
+			confirmButtonText: 'Got it!'
+		})
+	}
+
+	// Event listener for "info" icon
+    const infoIcon = document.querySelector(".fa-circle-info");
+    infoIcon.addEventListener("click", () => {
+        sweetAlert();
+    });
 })();
