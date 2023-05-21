@@ -1,5 +1,7 @@
 // jQuery plugin for custom cursor
+// Original author: Batuhan Gulgor
 // Source: https://dev.to/b4two/how-to-make-a-custom-cursor-with-css-and-jquery-5g3m
+
 $(document).ready(function(){
 	var cursor = $(".cursor");
 	

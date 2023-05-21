@@ -148,25 +148,39 @@ class GameBoard {
     // When page is refreshed, reset all game stats
     const gameBoard = new GameBoard();
     
-    // Add event listeners to each cell
-	// Call makeMove method when a cell is clicked
-    gameBoard.cells.forEach((cell, index) => {
-        cell.addEventListener('click', () => {
-            gameBoard.makeMove(index);
-        });
-    });
+    // // Add event listeners to each cell
+	// // Call makeMove method when a cell is clicked
+    // gameBoard.cells.forEach((cell, index) => {
+    //     cell.addEventListener('click', () => {
+    //         gameBoard.makeMove(index);
+    //     });
+    // });
     
-    // Add event listener to reset button
-    const resetButton = document.querySelector('#reset-button');
-    resetButton.addEventListener('click', () => {
-        gameBoard.reset();
-    });
+    // // Add event listener to reset button
+    // const resetButton = document.querySelector('#reset-button');
+    // resetButton.addEventListener('click', () => {
+    //     gameBoard.reset();
+    // });
 
 	/**
 	 * 
 	 * Unit 6 code
 	 * 
 	 */
+
+	// Use jQuery to make the event listeners
+	// Add event listeners to each cell
+	// Call makeMove method when a cell is clicked
+	gameBoard.cells.forEach((cell, index) => {
+		$(cell).on('click', () => {
+			gameBoard.makeMove(index);
+		});
+	});
+
+	// Add event listener to reset button
+	$('#reset-button').on('click', () => {
+		gameBoard.reset();
+	});
 
 	// "sweetalert2" plugin configuration
 	function sweetAlert() {
@@ -180,9 +194,8 @@ class GameBoard {
 		})
 	}
 
-	// Event listener for "info" icon
-    const infoIcon = document.querySelector(".fa-circle-info");
-    infoIcon.addEventListener("click", () => {
-        sweetAlert();
-    });
+	// Use jQuery to add event listener for "info" icon
+	$(".fa-circle-info").on("click", () => {
+		sweetAlert();
+	});
 })();

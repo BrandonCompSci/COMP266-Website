@@ -1,3 +1,7 @@
+// jQuery code for "expandy" plugin
+// Original author: Mark Lee
+// Source: https://www.jqueryscript.net/accordion/Accordion-Style-jQuery-Plugin-To-Expand-Collapse-Elements.html
+
 // object.create polyfill
 if (typeof Object.create !== 'function') {
     Object.create = function (obj) {
