@@ -1,0 +1,107 @@
+/* 
+* Style sheet for Weather App project
+*/
+
+/* Use base-styles from original style sheet */
+@import url("styles.css");
+
+/* Create global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgba(27, 54, 93, 1);
+}
+
+h1 {
+	transform: translateY(50px);
+	color: whitesmoke;
+}
+
+h2 {
+	text-shadow: 4px 4px black;
+}
+
+.weather-card {
+	width: 90%;
+	max-width: 430px;
+	background: rgb(22, 98, 184);
+	border: 5px solid rgba(253, 185, 36, 1);
+	color: #ffffff;
+	margin: 100px auto;
+	border-radius: 20px;
+	padding: 40px 35px;
+	text-align: center;
+	box-shadow: 0 0 30px rgb(225, 116, 1);
+}
+
+.search-bar {
+	position: relative;
+}
+
+input {
+	border-radius: 20px;
+	padding-left: 20px;
+}
+
+.search-bar i {
+	position: absolute;
+	top: 42%;
+	transform: translateY(-50%) translateX(-210%);
+	color: rgb(91, 91, 91);
+	cursor: pointer;
+}
+
+.details i {
+	font-size: 55px; 
+}
+
+#weather-icon {
+	font-size: 100px;
+	margin-top: 30px;
+}
+
+.temperature {
+	font-size: 70px;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.error {
+	display: none;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.humidity,
+.wind-speed {
+	padding-top: 10px;
+}
+
+.details p {
+	font-size: 20px;
+}
+
+/* Add styles for each weather pattern */
+.weather i {
+	text-shadow: 5px 5px black;
+}
+
+.fa-cloud-bolt,
+.fa-cloud-rain,
+.fa-cloud-showers-heavy,
+.fa-smog,
+.fa-cloud {
+	color:rgb(142, 142, 142);
+}
+
+.fa-sun {
+	color:rgba(253, 185, 36, 1);
+}

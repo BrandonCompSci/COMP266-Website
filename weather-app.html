@@ -1,0 +1,65 @@
+<!-- HTML code for Weather app using API from openweathermap.org-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather App</title>
+		<link rel="stylesheet" href="css/weather-app-styles.css">
+		
+		<!-- Provides access to the fontawesome API -->
+        <script src="https://kit.fontawesome.com/72e5839d36.js" crossorigin="anonymous"></script>
+	
+		<!-- Load jQuery v3.7.0 -->
+		<script src="scripts/jquery.js"></script>
+		
+		<script defer src="scripts/weather-app.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			Weather App
+		</h1>
+
+		<div class="weather-card">
+			<div class="search-bar">
+				<input type="text" placeholder="City Name" spellcheck="false">
+				
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+
+			<div class="error">
+				Invalid City
+			</div>
+
+			<div class="weather">
+
+				<i id="weather-icon"></i>
+				
+				<h2 class="temperature"></h2>
+
+				<h2 class="city"></h2>
+
+				<div class="details">
+					<div>
+						<i class="fa-solid fa-water"></i>
+						
+						<p class="humidity"></p>
+						
+						<p>Humidity</p>
+					</div>
+
+					<div>
+						<i class="fa-solid fa-wind"></i>
+					
+						<p class="wind-speed"></p>
+						
+						<p>Wind Speed</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
