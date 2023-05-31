@@ -3,7 +3,6 @@
 
 // JavaScript / jQuery code for Weather app using API from openweathermap.org
 (function() {
-
 	// Checks the weather of inputted city
 	async function checkWeather(city) {
 		// Get API data from openweathermap.org

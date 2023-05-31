@@ -1,5 +1,5 @@
 /* 
-* Style sheet for Weather App project
+* Style sheet for Country App project
 */
 
 /* Use base-styles from original style sheet */
@@ -12,10 +12,6 @@
 	padding: 0;
 }
 
-body {
-	background: rgba(27, 54, 93, 1);
-}
-
 h1 {
 	transform: translateY(50px);
 	color: whitesmoke;
@@ -23,19 +19,35 @@ h1 {
 
 h2 {
 	text-shadow: 4px 4px black;
+	transform: translateY(-30px);
+	margin-bottom: 10px;
 }
 
-.weather-card {
+h3 {
+	margin-top: 0px;
+}
+
+#language {
+	margin-bottom: 0px;
+}
+
+.country-card {
 	width: 90%;
 	max-width: 430px;
-	background: rgb(22, 98, 184);
-	border: 5px solid rgba(253, 185, 36, 1);
+	background: linear-gradient(135deg, #0033fe, #ab5ccd);
+	border: 5px solid rgb(255, 114, 206);
 	color: #ffffff;
 	margin: 100px auto;
 	border-radius: 20px;
 	padding: 40px 35px;
 	text-align: center;
 	box-shadow: 0 0 30px rgb(225, 116, 1);
+}
+
+img {
+	border: 1px solid black;
+	box-shadow: 0 0 10px black;
+	margin-top: 30px;
 }
 
 .search-bar {
@@ -53,57 +65,6 @@ input {
 	transform: translateY(-50%) translateX(-210%);
 	color: rgb(91, 91, 91);
 	cursor: pointer;
-}
-
-.details i {
-	font-size: 55px; 
-}
-
-#weather-icon {
-	font-size: 100px;
-	margin-top: 30px;
-}
-
-.temperature {
-	font-size: 70px;
-}
-
-.details {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.error {
-	display: none;
-	padding-top: 10px;
-	font-size: 18px;
-}
-
-.humidity,
-.wind-speed {
-	padding-top: 10px;
-}
-
-.details p {
-	font-size: 20px;
-}
-
-/* Add styles for each weather pattern */
-.weather i {
-	text-shadow: 5px 5px black;
-}
-
-.fa-cloud-bolt,
-.fa-cloud-rain,
-.fa-cloud-showers-heavy,
-.fa-smog,
-.fa-cloud {
-	color:rgb(142, 142, 142);
-}
-
-.fa-sun {
-	color:rgba(253, 185, 36, 1);
 }
 
 /* Responsive layout - 

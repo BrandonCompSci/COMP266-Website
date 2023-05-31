@@ -1,0 +1,66 @@
+<!-- HTML code for Country app using API from restcountries.com-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Country App</title>
+		<link rel="stylesheet" href="css/country-app-styles.css">
+
+		<!-- Source: https://favicon.io/favicon-generator/ -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		
+		<!-- Provides access to the fontawesome API -->
+        <script src="https://kit.fontawesome.com/72e5839d36.js" crossorigin="anonymous"></script>
+	
+		<!-- Load jQuery v3.7.0 -->
+		<script src="scripts/jquery.js"></script>
+		
+		<script defer src="scripts/country-app.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			Country App
+		</h1>
+
+		<div class="country-card">
+			<div class="search-bar">
+				<input type="text" placeholder="Country Name" spellcheck="false">
+				
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</div>
+
+			<div class="error">
+				Invalid Country
+			</div>
+
+			<div class="country-info">
+				<img src="" id="country-flag" alt="Country flag">
+
+				<h2 class="country-name"></h2>
+
+				<h3>
+					Capital:&nbsp<span class="capital"></span>
+				</h3>
+
+				<h3>
+					Continent:&nbsp<span class="continent"></span>
+				</h3>
+
+				<h3>
+					Currency:&nbsp<span class="currency"></span>
+				</h3>
+				
+				<h3>
+					Population:&nbsp<span class="population"></span>
+				</h3>
+
+				<h3 id="language">
+					Language:&nbsp<span class="language"></span>
+				</h3>
+			</div>
+		</div>
+	</body>
+</html>
